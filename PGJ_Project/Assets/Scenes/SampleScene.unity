@@ -1444,13 +1444,18 @@ MonoBehaviour:
   PlayerFeet: {fileID: 747524297}
   IsGrounded: {fileID: 11400000, guid: 9ac83c3de5b54824db6e9b720deaa328, type: 2}
   MovementSpeed: {fileID: 11400000, guid: e1efcc4d190aa664bb7b903bc8b19061, type: 2}
-  DefaultMovementSpeed: 1
-  SprintMultiplier: 1.5
-  JumpForce: 125
-  GroundCheckRadius: 0.4
   GroundLayer:
     serializedVersion: 2
     m_Bits: 512
+  VirtualCamera: {fileID: 1129758251}
+  DefaultMovementSpeed: 1
+  MinFOV: 70
+  MaxFOV: 76
+  LerpSpeed: 5.5
+  SprintMultiplier: 1.25
+  JumpForce: 140
+  GroundCheckRadius: 0.425
+  JumpCooldown: 0.4
 --- !u!54 &1307379791
 Rigidbody:
   m_ObjectHideFlags: 0
