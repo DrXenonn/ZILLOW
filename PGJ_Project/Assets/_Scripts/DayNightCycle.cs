@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SkyboxBlender : MonoBehaviour
@@ -70,10 +71,14 @@ public class SkyboxBlender : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        GlobalLight.transform.Rotate(Vector3.right, 180 * Time.deltaTime / (TransitionTime + TransitionDuration));
+    }
+
     private void UpdateScript()
     {
         //TODO: Globallight should rotate constantly.
-        
         if (!_isTransitioning) return;
         
         var progress = Mathf.Clamp01(_transitionTimer / TransitionDuration);
