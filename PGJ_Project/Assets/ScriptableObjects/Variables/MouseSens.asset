@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f61b41a0e0eb0f43af68502735b8431, type: 3}
   m_Name: MouseSens
   m_EditorClassIdentifier: 
-  Value: 550
+  Value: 1

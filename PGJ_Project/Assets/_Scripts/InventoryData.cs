@@ -1,8 +1,8 @@
-using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Inventory", fileName = "PlayerInventory")]
 public class InventoryData : ScriptableObject
 {
-    public List<Item> Items = new List<Item>();
+    public SerializedDictionary<Item, int> Inventory = new SerializedDictionary<Item, int>();
 }

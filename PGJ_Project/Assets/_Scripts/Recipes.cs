@@ -1,13 +1,23 @@
 using UnityEngine;
 
 [System.Serializable]
-public struct Recipe
+public struct Ingredient
 {
-    public Item[] Ingredients;
-    public Item Result;
+    public Item Item;
+    public int Quantity;
 }
 
-public class Recipes : MonoBehaviour
+[System.Serializable]
+public struct Recipe
+{
+    public Ingredient[] Ingredients;
+    public Item Result;
+    public int Quantity;
+    public float Time;
+}
+
+[CreateAssetMenu(menuName = "RecipeManager", fileName = "RecipeManager")]
+public class Recipes : ScriptableObject
 {
     public Recipe[] RecipesArray;
 }

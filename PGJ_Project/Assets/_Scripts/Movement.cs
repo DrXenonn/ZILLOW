@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private FloatVariable MovementSpeed;
     [SerializeField] private LayerMask GroundLayer;
     [SerializeField] private CinemachineVirtualCamera VirtualCamera;
+    [SerializeField] private BoolVariable CanMove;
     [Header("Settings")]
     [SerializeField] private float DefaultMovementSpeed;
     [SerializeField] private float MinFOV, MaxFOV;
@@ -32,6 +33,7 @@ public class Movement : MonoBehaviour
     {
         MovementSpeed.Value = DefaultMovementSpeed;
         IsGrounded.Value = false;
+        CanMove.Value = true;
         _currentFOV = VirtualCamera.m_Lens.FieldOfView;
         _targetFOV = _currentFOV;
     }
@@ -43,6 +45,8 @@ public class Movement : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext ctx)
     {
+        if (!CanMove.Value) return;
+
         if (!ctx.performed) return;
         if (!IsGrounded.Value) return;
         if (_timeSinceLatestJump < JumpCooldown) return;
@@ -79,7 +83,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         IsGrounded.Value = Physics.CheckSphere(PlayerFeet.position, GroundCheckRadius, GroundLayer);
-        _canStrafe = Physics.CheckSphere(PlayerFeet.position, GroundCheckRadius * 3.25f, GroundLayer);
+        _canStrafe = Physics.CheckSphere(PlayerFeet.position, GroundCheckRadius * 4.5f, GroundLayer);
         UpdateCameraFOV();
 
         _timeSinceLatestJump += Time.deltaTime;
@@ -87,6 +91,8 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!CanMove.Value) return;
+
         var move = Cam.transform.forward * _moveInput.y + Cam.transform.right * _moveInput.x;
         move.y = 0;
         var speed = MovementSpeed.Value;

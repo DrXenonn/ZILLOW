@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa913012deed97489d5e695654baec6, type: 3}
+  m_Name: FletchingTable
+  m_EditorClassIdentifier: 
+  RecipesArray:
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: bd7035237deba914898d0a47b054717f, type: 2}
+      Quantity: 2
+    Result: {fileID: 11400000, guid: 2601b9a3a10c9f14f94a72bf068beb3e, type: 2}
+    Quantity: 1
+    Time: 1
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: 2601b9a3a10c9f14f94a72bf068beb3e, type: 2}
+      Quantity: 5
+    - Item: {fileID: 11400000, guid: 59893c70b69389044808792203216bde, type: 2}
+      Quantity: 1
+    Result: {fileID: 11400000, guid: ec2a044961fd3b843bb4ca96c1b55807, type: 2}
+    Quantity: 5
+    Time: 1

@@ -14,8 +14,7 @@ public class PlayerLook : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        LockAndHideMouse(true);
         UpdateSens();
     }
 
@@ -23,5 +22,17 @@ public class PlayerLook : MonoBehaviour
     {
         _pov.m_HorizontalAxis.m_MaxSpeed = Sens.Value;
         _pov.m_VerticalAxis.m_MaxSpeed = Sens.Value;
+    }
+
+    public void LockCamera(bool state)
+    {
+        _pov.m_HorizontalAxis.m_MaxSpeed = state ? 0 : Sens.Value;
+        _pov.m_VerticalAxis.m_MaxSpeed = state ? 0 : Sens.Value;
+    }
+
+    public void LockAndHideMouse(bool state)
+    {
+        Cursor.visible = !state;
+        Cursor.lockState = state ? CursorLockMode.Locked : CursorLockMode.None;
     }
 }
