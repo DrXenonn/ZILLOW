@@ -183,6 +183,11 @@ public class RecipeUI : MonoBehaviour
         ActionText.text = state ? "Craft" : "Select an item first...";
     }
 
+    public void OnCollectItem(Component sender, object data)
+    {
+        UpdateRecipes();
+    }
+
     private void PrintQuantity(GameObject icon, int quantity)
     {
         var tmp = icon.GetComponentInChildren<TextMeshProUGUI>();

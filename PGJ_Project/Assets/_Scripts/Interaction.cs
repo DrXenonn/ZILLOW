@@ -40,7 +40,7 @@ public class Interaction : MonoBehaviour
     
     private void OnDrawGizmos()
     {
-        Gizmos.DrawRay(RayOrigin.transform.position, _cam.transform.forward);
+        Gizmos.DrawRay(RayOrigin.transform.position, _cam!.transform.forward);
     }
 }
 

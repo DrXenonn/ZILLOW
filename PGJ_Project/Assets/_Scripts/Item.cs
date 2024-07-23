@@ -3,8 +3,8 @@ using UnityEngine;
 public enum ItemTypes
 {
     Ingredient,
-    Consumable,
-    Throwable,
+    Potion,
+    Arrow,
     Seed
 }
 
