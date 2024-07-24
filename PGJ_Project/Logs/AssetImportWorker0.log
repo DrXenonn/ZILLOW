@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.19f1 (244b723c30a6) revision 2378610'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 8060 MB
+OS: 'Windows 10  (10.0.19045) 64bit Enterprise' Language: 'en' Physical Memory: 16326 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/MyProjects/Git-Projects/15thPGJ/PGJ-Project/PGJ_Project
+C:/UnityProjects/PGJ-Project/PGJ_Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52480
-Successfully changed project path to: E:/MyProjects/Git-Projects/15thPGJ/PGJ-Project/PGJ_Project
-E:/MyProjects/Git-Projects/15thPGJ/PGJ-Project/PGJ_Project
+51029
+Successfully changed project path to: C:/UnityProjects/PGJ-Project/PGJ_Project
+C:/UnityProjects/PGJ-Project/PGJ_Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,68 +49,70 @@ E:/MyProjects/Git-Projects/15thPGJ/PGJ-Project/PGJ_Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1988] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 364701414 [EditorId] 364701414 [Version] 1048832 [Id] WindowsEditor(7,ArashN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10452] Host "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 1069533144 [EditorId] 1069533144 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E8KL8PV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1988] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 364701414 [EditorId] 364701414 [Version] 1048832 [Id] WindowsEditor(7,ArashN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10452] Host "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 1069533144 [EditorId] 1069533144 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-E8KL8PV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 10.05 ms, found 1 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Refreshing native plugins compatible for Editor in 16.27 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.19f1 (244b723c30a6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/MyProjects/Git-Projects/15thPGJ/PGJ-Project/PGJ_Project/Assets
+[Subsystems] Discovering subsystems at path C:/UnityProjects/PGJ-Project/PGJ_Project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 740 (ID=0xfc8)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
     Vendor:   NVIDIA
-    VRAM:     2007 MB
-    Driver:   30.0.14.7464
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+    VRAM:     6029 MB
+    Driver:   31.0.15.5222
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.017870 seconds.
-- Loaded All Assemblies, in  0.690 seconds
+Registered in 0.016038 seconds.
+- Loaded All Assemblies, in  0.449 seconds
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 819 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.532 seconds
-Domain Reload Profiling: 1219ms
-	BeginReloadAssembly (206ms)
+- Finished resetting the current domain, in  1.244 seconds
+Domain Reload Profiling: 1691ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (120ms)
-	LoadAllAssembliesAndSetupDomain (273ms)
-		LoadAssemblies (203ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (181ms)
+		LoadAssemblies (127ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (268ms)
-			TypeCache.Refresh (266ms)
-				TypeCache.ScanAssembly (242ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (177ms)
+				TypeCache.ScanAssembly (160ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (532ms)
+	FinalizeReload (1244ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (418ms)
+		SetupLoadedEditorAssemblies (1177ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (959ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (291ms)
-			ProcessInitializeOnLoadMethodAttributes (94ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,53 +120,53 @@ Domain Reload Profiling: 1219ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.059 seconds
-Refreshing native plugins compatible for Editor in 3.45 ms, found 1 plugins.
+- Loaded All Assemblies, in  0.820 seconds
+Refreshing native plugins compatible for Editor in 4.24 ms, found 1 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.922 seconds
-Domain Reload Profiling: 1978ms
-	BeginReloadAssembly (295ms)
+- Finished resetting the current domain, in  0.879 seconds
+Domain Reload Profiling: 1695ms
+	BeginReloadAssembly (180ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (44ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (605ms)
-		LoadAssemblies (519ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (521ms)
+		LoadAssemblies (399ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (254ms)
-			TypeCache.Refresh (197ms)
-				TypeCache.ScanAssembly (179ms)
-			ScanForSourceGeneratedMonoScriptInfo (39ms)
+		AnalyzeDomain (225ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (37ms)
 			ResolveRequiredComponents (16ms)
-	FinalizeReload (922ms)
+	FinalizeReload (880ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (705ms)
+		SetupLoadedEditorAssemblies (634ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (471ms)
-			ProcessInitializeOnLoadMethodAttributes (121ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (402ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 3.21 ms, found 1 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5531 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (1.6 MB). Loaded Objects now: 6002.
-Memory consumption went from 234.3 MB to 232.6 MB.
-Total: 7.209400 ms (FindLiveObjects: 0.806800 ms CreateObjectMapping: 0.753800 ms MarkObjects: 4.907800 ms  DeleteObjects: 0.739600 ms)
+Unloading 5533 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (1.5 MB). Loaded Objects now: 6008.
+Memory consumption went from 240.1 MB to 238.7 MB.
+Total: 4.002100 ms (FindLiveObjects: 0.423000 ms CreateObjectMapping: 0.418600 ms MarkObjects: 2.736900 ms  DeleteObjects: 0.422700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,9 +183,1369 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1370.824910 seconds.
+  Time since last request: 63150.418143 seconds.
+  path: Assets/Rock.terrainlayer
+  artifactKey: Guid(53d620700d938974cbebffd805856c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rock.terrainlayer using Guid(53d620700d938974cbebffd805856c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c7a72df11799dd92ece731eb6b4e33') in 0.130829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.562240 seconds.
   path: Assets/Scenes/Map.unity
   artifactKey: Guid(9473e61082a52934ebc519713f172adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map.unity using Guid(9473e61082a52934ebc519713f172adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bfb286d741bcd74bfc488078741cec6') in 0.147968 seconds
+Start importing Assets/Scenes/Map.unity using Guid(9473e61082a52934ebc519713f172adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141e6da5e4cc0359152cdb3c6d2b146f') in 0.000635 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 420.270715 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565c20120d4e8aa056ad131e0ae88e26') in 0.000773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.467 seconds
+Refreshing native plugins compatible for Editor in 2.89 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.294 seconds
+Domain Reload Profiling: 1757ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (291ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1294ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (598ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (370ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 3.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5331 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (1.4 MB). Loaded Objects now: 6028.
+Memory consumption went from 203.9 MB to 202.5 MB.
+Total: 4.121200 ms (FindLiveObjects: 0.446600 ms CreateObjectMapping: 0.522800 ms MarkObjects: 2.779300 ms  DeleteObjects: 0.371700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 493.093701 seconds.
+  path: Assets/Scenes/Map.unity
+  artifactKey: Guid(9473e61082a52934ebc519713f172adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map.unity using Guid(9473e61082a52934ebc519713f172adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878320b321818d77c3fde834afe46fc5') in 0.014243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1551.444835 seconds.
+  path: Assets/Models/NaturePack
+  artifactKey: Guid(dc55f067eaab38948976ab81b96a945a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack using Guid(dc55f067eaab38948976ab81b96a945a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1c6c9cdf4d5d7c1dfc0a6455b9a156') in 0.001304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.227993 seconds.
+  path: Assets/Models/NaturePack/BirchTree_1.fbx
+  artifactKey: Guid(cc2e4083a63af79449bb386277815ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_1.fbx using Guid(cc2e4083a63af79449bb386277815ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c305c69e745f999ab98c09b9f44a617') in 0.359744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/Cactus_2.fbx
+  artifactKey: Guid(80df555510173dd45bcd56d0052d1d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Cactus_2.fbx using Guid(80df555510173dd45bcd56d0052d1d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819a6a6d58cf4b56e31069a220274750') in 0.026065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Autumn_1.fbx
+  artifactKey: Guid(e33a27a6258d8cb4ca9411c78d334f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Autumn_1.fbx using Guid(e33a27a6258d8cb4ca9411c78d334f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd0f21c109a867877a4859567828a15') in 0.040113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/NaturePack/Cactus_5.fbx
+  artifactKey: Guid(00539e583d769964f9ac60ea23e2b539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Cactus_5.fbx using Guid(00539e583d769964f9ac60ea23e2b539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1be8261c98cff2365efc30b10f73af') in 0.026290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_2.fbx
+  artifactKey: Guid(aff1364c95fe6f7419cef384dfd894c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_2.fbx using Guid(aff1364c95fe6f7419cef384dfd894c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f06bd39f5aded51c8f559f31dbcc6c') in 0.029037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_3.fbx
+  artifactKey: Guid(dd788737c68036344ab1942a2b801b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_3.fbx using Guid(dd788737c68036344ab1942a2b801b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde5bceb6241882b63743e82af231f6d') in 0.029551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_2.fbx
+  artifactKey: Guid(5f07cc83071abdc4bbcde3ef8ef1359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_2.fbx using Guid(5f07cc83071abdc4bbcde3ef8ef1359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb46720b4d520be6aca4602d47bb5bc2') in 0.039213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_4.fbx
+  artifactKey: Guid(3e586ab491ecb30419a67644ef687e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_4.fbx using Guid(3e586ab491ecb30419a67644ef687e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89dd8e82f004ad807d92ea1d8c9ab44a') in 0.028400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_Snow_2.fbx
+  artifactKey: Guid(46a9d53b220786c45ae6fd0116bab009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_Snow_2.fbx using Guid(46a9d53b220786c45ae6fd0116bab009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c94badaead69da3015e5de825da28b') in 0.034935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BushBerries_1.fbx
+  artifactKey: Guid(06d17b9f4b7fd1a45b4b58a54ba86de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BushBerries_1.fbx using Guid(06d17b9f4b7fd1a45b4b58a54ba86de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6c2c329cefc9fcc5cf9f4904a841fd') in 0.029671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/CactusFlowers_3.fbx
+  artifactKey: Guid(45da1f5ec24bd284c8ccf78d46add4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CactusFlowers_3.fbx using Guid(45da1f5ec24bd284c8ccf78d46add4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ebd0666533caec1bdcfefdc18ad31d') in 0.030346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_1.fbx
+  artifactKey: Guid(d75df14cc1bc83743a58b70af05efe8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_1.fbx using Guid(d75df14cc1bc83743a58b70af05efe8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2715a1ca2fb511384c82b2b1cb5ed2ff') in 0.029745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_Snow_3.fbx
+  artifactKey: Guid(c59b4095d1512244c8d08281ded87cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_Snow_3.fbx using Guid(c59b4095d1512244c8d08281ded87cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b079a811906072a6ebf52a5b857368') in 0.033981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_1.fbx
+  artifactKey: Guid(f4c61664364717d46ad6483945491797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_1.fbx using Guid(f4c61664364717d46ad6483945491797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff541cf9cd10a387526801724e1b79f') in 0.032856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/NaturePack/Bush_2.fbx
+  artifactKey: Guid(5b52e739dde4c20458cb0deb3d93ad3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Bush_2.fbx using Guid(5b52e739dde4c20458cb0deb3d93ad3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e04097333b35e3bc585b59a6c6b99fe') in 0.025270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Cactus_1.fbx
+  artifactKey: Guid(32e511ec37f03d241a3027559dd54037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Cactus_1.fbx using Guid(32e511ec37f03d241a3027559dd54037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3d321429ea24e8b5330d172cd922c1') in 0.032441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Autumn_2.fbx
+  artifactKey: Guid(166e1f5b3df7be24ca5e1623156ca4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Autumn_2.fbx using Guid(166e1f5b3df7be24ca5e1623156ca4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040573fb0b8822107e2b1b2a2d80dfd1') in 0.040702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Autumn_3.fbx
+  artifactKey: Guid(ebbf811eaeeda7c47a5e2f06c497daa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Autumn_3.fbx using Guid(ebbf811eaeeda7c47a5e2f06c497daa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d3814d173c0a85e1738fc0ca7c6d91') in 0.043811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CactusFlowers_4.fbx
+  artifactKey: Guid(976538cd4d3cdc84587857e424eca320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CactusFlowers_4.fbx using Guid(976538cd4d3cdc84587857e424eca320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a263e20ecaa6aaf1a58d46e15fd4863') in 0.032344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Cactus_4.fbx
+  artifactKey: Guid(7e2131025e3f04d489211ad5ecd958c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Cactus_4.fbx using Guid(7e2131025e3f04d489211ad5ecd958c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11720745f1b2124f8f4afcac6b4d7b85') in 0.027720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/NaturePack/Cactus_3.fbx
+  artifactKey: Guid(e8430d5c30bfbf840be33886910bcf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Cactus_3.fbx using Guid(e8430d5c30bfbf840be33886910bcf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98300f4ed33c7b83ba56ccccf8f4f0e') in 0.026564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Bush_Snow_2.fbx
+  artifactKey: Guid(7542a6bcdc84ed242b964044ecdf6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Bush_Snow_2.fbx using Guid(7542a6bcdc84ed242b964044ecdf6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f723d365222b7428ef1f3547134c1e') in 0.030230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_5.fbx
+  artifactKey: Guid(ab28656362c44d1459d8ef09554997ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_5.fbx using Guid(ab28656362c44d1459d8ef09554997ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00df275bcccff83a7a6b064a2929a02') in 0.030181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/CactusFlowers_2.fbx
+  artifactKey: Guid(b70e538e6d4db8c40b936ee6df18bbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CactusFlowers_2.fbx using Guid(b70e538e6d4db8c40b936ee6df18bbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b67a82520fbffdb9a5a458690161df') in 0.033670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_4.fbx
+  artifactKey: Guid(3842ee4f7a405e1449b7f1cb78f46ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_4.fbx using Guid(3842ee4f7a405e1449b7f1cb78f46ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e10f2c55e068f73cbaf7652ed9eff8d') in 0.043150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/BirchTree_5.fbx
+  artifactKey: Guid(01b86d90809433d4c9043ccf946f95cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_5.fbx using Guid(01b86d90809433d4c9043ccf946f95cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5e25f83539086731e977b9c871952f') in 0.042684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/NaturePack/BushBerries_2.fbx
+  artifactKey: Guid(57b9cf6467631f846a09cfaea1e2c31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BushBerries_2.fbx using Guid(57b9cf6467631f846a09cfaea1e2c31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3dac5e8c3c3fe6063d5afefbf09bde8') in 0.031961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Autumn_2.fbx
+  artifactKey: Guid(c96ab4c0f38caf64f9e015108503cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Autumn_2.fbx using Guid(c96ab4c0f38caf64f9e015108503cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c05c5390ef8b7e9869946944e20ce3') in 0.036798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Corn_1.fbx
+  artifactKey: Guid(febf93807b8a526479e5ef4c22a040ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Corn_1.fbx using Guid(febf93807b8a526479e5ef4c22a040ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3410edc08353da42ff98a4f4cf6dadfb') in 0.024083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_1.fbx
+  artifactKey: Guid(b132ebad5736f154883fb7fc26370f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_1.fbx using Guid(b132ebad5736f154883fb7fc26370f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cae71834e3000e3fcb481f81036e59f') in 0.025876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_4.fbx
+  artifactKey: Guid(74b8cbf81d41b154e981946fd98a033a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_4.fbx using Guid(74b8cbf81d41b154e981946fd98a033a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f65ca27cc7e04cdf9c599fb5af47279') in 0.035542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_4.fbx
+  artifactKey: Guid(e1eaadbe5a4e3c644b55a00c5b3a7e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_4.fbx using Guid(e1eaadbe5a4e3c644b55a00c5b3a7e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80334b952dbb95acdeb7ab4327d5c055') in 0.024300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_2.fbx
+  artifactKey: Guid(3e3d04c415536c940a2b041069e97fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_2.fbx using Guid(3e3d04c415536c940a2b041069e97fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d75d375abc695c032a3f0452a99a62') in 0.025056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Snow_2.fbx
+  artifactKey: Guid(191536bcc717ac5478f23557569dc612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Snow_2.fbx using Guid(191536bcc717ac5478f23557569dc612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf4e30f007ba46e3685e364ee0412ab') in 0.035281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Autumn_1.fbx
+  artifactKey: Guid(39a7b494ebd79fb40ab2e7cfb8ccd2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Autumn_1.fbx using Guid(39a7b494ebd79fb40ab2e7cfb8ccd2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0140d2d904dfa382f9b46c5975a538c5') in 0.030958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/Corn_2.fbx
+  artifactKey: Guid(890b396b6d12ba445906c14d1422ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Corn_2.fbx using Guid(890b396b6d12ba445906c14d1422ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e374a870ef1f91900e048521e662b837') in 0.029565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_3.fbx
+  artifactKey: Guid(49a0b8163ec99e24baae585306e2ee2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_3.fbx using Guid(49a0b8163ec99e24baae585306e2ee2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1799297d496d908aa6a2a0f976ab4f57') in 0.024206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Grass_Short.fbx
+  artifactKey: Guid(2aa01b1ff89e0e54bb6d3bf330958037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Grass_Short.fbx using Guid(2aa01b1ff89e0e54bb6d3bf330958037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330d5b90ba8df9324db6cdb89db0c1c6') in 0.024731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/CommonTree_5.fbx
+  artifactKey: Guid(ea0efb73b3f8b9a449bcc79566b2f621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_5.fbx using Guid(ea0efb73b3f8b9a449bcc79566b2f621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797f3dd4be3bc318d72ced95b0c8f6b2') in 0.031648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_Snow_5.fbx
+  artifactKey: Guid(1b40fea9aff12d447a4084d1e1195846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_Snow_5.fbx using Guid(1b40fea9aff12d447a4084d1e1195846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7a12b1e870520b2ccaea90473d742c') in 0.030154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Snow_1.fbx
+  artifactKey: Guid(23669dc43b5e25849afdc454a778fafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Snow_1.fbx using Guid(23669dc43b5e25849afdc454a778fafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb211e618117300654fcdc99d902590b') in 0.035440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Snow_3.fbx
+  artifactKey: Guid(5faa718aca9402344a3d4ac88b4e8466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Snow_3.fbx using Guid(5faa718aca9402344a3d4ac88b4e8466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e0f13a6a865e8eb1305110d30f3374') in 0.041486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Snow_4.fbx
+  artifactKey: Guid(9169aa968913c394d8f3717259ed038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Snow_4.fbx using Guid(9169aa968913c394d8f3717259ed038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9200f69c913da0a6e4966958b41090f3') in 0.038240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Autumn_3.fbx
+  artifactKey: Guid(cccb7e9d722fcf2439d17ce887de8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Autumn_3.fbx using Guid(cccb7e9d722fcf2439d17ce887de8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e3f07ca33f8aa58e4e168011142a01') in 0.035031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Snow_4.fbx
+  artifactKey: Guid(258040e1ec1275e4e80df3dcccf680a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Snow_4.fbx using Guid(258040e1ec1275e4e80df3dcccf680a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7659c5e8168b2e308f0dc1d9f76f2e68') in 0.045967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Bush_1.fbx
+  artifactKey: Guid(366c24f25d75b524c89cb9933949decf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Bush_1.fbx using Guid(366c24f25d75b524c89cb9933949decf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296aba80fc6e568eea98bde2519e97c0') in 0.028078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/Bush_Snow_1.fbx
+  artifactKey: Guid(2d62a874575cb1c45984a26ecbfbf47c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Bush_Snow_1.fbx using Guid(2d62a874575cb1c45984a26ecbfbf47c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c3c88fc1b4ffd80fa738bb56e36953') in 0.030711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Autumn_4.fbx
+  artifactKey: Guid(f7ea4f5250542674cb97ee90be9be872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Autumn_4.fbx using Guid(f7ea4f5250542674cb97ee90be9be872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a49a8836bb7c1a52d90f519ffaca54d') in 0.039951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Flowers.fbx
+  artifactKey: Guid(6197726c6f608ce4b9498d3663bcecbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Flowers.fbx using Guid(6197726c6f608ce4b9498d3663bcecbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c8cb0eb296cdd22801819dec15cec5') in 0.036678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Autumn_5.fbx
+  artifactKey: Guid(012e9aea81070b74ca116ea242f5583c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Autumn_5.fbx using Guid(012e9aea81070b74ca116ea242f5583c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02335b027d36461c80c990a5c572dc49') in 0.044836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_Snow_4.fbx
+  artifactKey: Guid(8da0299a7cc712d49b038349d486a131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_Snow_4.fbx using Guid(8da0299a7cc712d49b038349d486a131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6ccc3702c1d72fce5cc49fcb335de8') in 0.031096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Snow_5.fbx
+  artifactKey: Guid(464f6be6e8f62394198edffdea5d42d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Snow_5.fbx using Guid(464f6be6e8f62394198edffdea5d42d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ced6725a21c664eec48bb267068fb2') in 0.047068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_Snow_1.fbx
+  artifactKey: Guid(e6b22d2ac179a3449b9b3264488fcc7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_Snow_1.fbx using Guid(e6b22d2ac179a3449b9b3264488fcc7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6d7a2af59767f04c27cbc83fb0b68c') in 0.031384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Snow_1.fbx
+  artifactKey: Guid(a59f3210f8d04ea41b5e59f7f889c617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Snow_1.fbx using Guid(a59f3210f8d04ea41b5e59f7f889c617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4493d0061b29ed54b68f53ed176f273') in 0.045992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_5.fbx
+  artifactKey: Guid(a17cc4f8753016e4a8f0ac9e03237afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_5.fbx using Guid(a17cc4f8753016e4a8f0ac9e03237afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5015d4e6bd482b484f806da6de6e23e') in 0.024805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Snow_3.fbx
+  artifactKey: Guid(8cc19fe3d06342544be4c2def1fb7f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Snow_3.fbx using Guid(8cc19fe3d06342544be4c2def1fb7f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6776c71a6cea67fbb127e3653809f468') in 0.047407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_Snow_5.fbx
+  artifactKey: Guid(5248d539f4600434da9dc75c62a7c0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_Snow_5.fbx using Guid(5248d539f4600434da9dc75c62a7c0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17909503e60a2974959b45b76e0a8e2d') in 0.034966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/CommonTree_3.fbx
+  artifactKey: Guid(37f2edfaa5c40834a82dd3df13877c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_3.fbx using Guid(37f2edfaa5c40834a82dd3df13877c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7df3e18d3f11dfa92aa3d83390e1eb') in 0.033743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Snow_2.fbx
+  artifactKey: Guid(ca86b9af42b593241a40e020e7e59d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Snow_2.fbx using Guid(ca86b9af42b593241a40e020e7e59d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e00dfce400ffd00438e99728d6c7e9c') in 0.044428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_Snow_2.fbx
+  artifactKey: Guid(89d8f7902cd238e439e403eb11c66ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_Snow_2.fbx using Guid(89d8f7902cd238e439e403eb11c66ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e50bda6f61b6df3544479b4894c9aa') in 0.030759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_Snow_1.fbx
+  artifactKey: Guid(6b7a393c3de83624aa02b688194e7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_Snow_1.fbx using Guid(6b7a393c3de83624aa02b688194e7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3efdf6084d049ac911553ff6edfcc99') in 0.036156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Snow_5.fbx
+  artifactKey: Guid(3c97d20720a4fa94c90d107d9d85c3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Snow_5.fbx using Guid(3c97d20720a4fa94c90d107d9d85c3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1754382294bbd323c6374b852965e64d') in 0.038160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Grass.fbx
+  artifactKey: Guid(634f29642b4638d43b87d5e5ef2db875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Grass.fbx using Guid(634f29642b4638d43b87d5e5ef2db875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'febd8c2f9981b457151fd40019456ff5') in 0.024490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/BirchTree_Dead_Snow_4.fbx
+  artifactKey: Guid(3d48562fa239d324988575ce500fc30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_Dead_Snow_4.fbx using Guid(3d48562fa239d324988575ce500fc30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ec1c67b109abddaca1db02f96e4edd') in 0.034684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/CactusFlower_1.fbx
+  artifactKey: Guid(6dd12e217e0e64c44a00823ab0f8fb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CactusFlower_1.fbx using Guid(6dd12e217e0e64c44a00823ab0f8fb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b63c123353bc5cee6e631a183e96db5') in 0.024803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Autumn_5.fbx
+  artifactKey: Guid(206f3580414e9f140ac4570e0a5aab14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Autumn_5.fbx using Guid(206f3580414e9f140ac4570e0a5aab14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9224d0acafb7cca8afd278763c1133b') in 0.033633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/BirchTree_3.fbx
+  artifactKey: Guid(df6c40ad2e250a0448e8a8e2d227a084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/BirchTree_3.fbx using Guid(df6c40ad2e250a0448e8a8e2d227a084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2842708b3ad286c472f9ec69a58260a') in 0.041225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Dead_Snow_3.fbx
+  artifactKey: Guid(a1e004b4a37d2fb49a4588042bd8d296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Dead_Snow_3.fbx using Guid(a1e004b4a37d2fb49a4588042bd8d296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14398fce936b89a93a2a61609980236') in 0.031086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/CommonTree_2.fbx
+  artifactKey: Guid(ce41fa1817f5d7b41971a4fd95c0d327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_2.fbx using Guid(ce41fa1817f5d7b41971a4fd95c0d327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c780711e443447110b7d5eb18dd00c') in 0.030098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/CactusFlowers_5.fbx
+  artifactKey: Guid(c810c5f406dba0f4087279bcf3eae407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CactusFlowers_5.fbx using Guid(c810c5f406dba0f4087279bcf3eae407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92309ba5179aa586c97f6e04997655d6') in 0.030662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/CommonTree_Autumn_4.fbx
+  artifactKey: Guid(3b3c63a2f6fd3a74b846c65106deae45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/CommonTree_Autumn_4.fbx using Guid(3b3c63a2f6fd3a74b846c65106deae45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2c9698e4733aea23e1b28a97ba2f4e') in 0.036607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Grass_2.fbx
+  artifactKey: Guid(b17cbfe23bdec984db23de127bbd0122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Grass_2.fbx using Guid(b17cbfe23bdec984db23de127bbd0122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81ae365b5a4c92faa68e04086f2c580a') in 0.026415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.140504 seconds.
+  path: Assets/Models/NaturePack/Lilypad.fbx
+  artifactKey: Guid(fb156c6e6b86fd54e90785e33f3b68f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Lilypad.fbx using Guid(fb156c6e6b86fd54e90785e33f3b68f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf2dde9051ed6e36761bfb766ab00ba') in 0.036149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PalmTree_3.fbx
+  artifactKey: Guid(f72adc071f024a24fb4021164056ac4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PalmTree_3.fbx using Guid(f72adc071f024a24fb4021164056ac4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8448feeb8fc7ac178c7ecb57505aaba') in 0.044774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/PalmTree_1.fbx
+  artifactKey: Guid(aadd49d46292c5b48afeb58608c986ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PalmTree_1.fbx using Guid(aadd49d46292c5b48afeb58608c986ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d86262d2a92f5ca475d427502e89d8c') in 0.036515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/PalmTree_2.fbx
+  artifactKey: Guid(27e6041ced9532d458ade42ac91b9995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PalmTree_2.fbx using Guid(27e6041ced9532d458ade42ac91b9995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fb11a127f771fe9675e25e6c312b58') in 0.039863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.044992 seconds.
+  path: Assets/Models/NaturePack/PalmTree_4.fbx
+  artifactKey: Guid(e615e24b9f4c2314aab656ab64a15cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PalmTree_4.fbx using Guid(e615e24b9f4c2314aab656ab64a15cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d75eeb30e0f22e813775677d986952c') in 0.047989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_Autumn_3.fbx
+  artifactKey: Guid(8d79387de9cb6f04ba57c04f348fdaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Autumn_3.fbx using Guid(8d79387de9cb6f04ba57c04f348fdaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a13b0f2af110b91fe8b7a23f5154d0f') in 0.037532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_5.fbx
+  artifactKey: Guid(94839a72d8e827e46976cddcda348bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_5.fbx using Guid(94839a72d8e827e46976cddcda348bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce56a4563e7dd1341690361352a467c') in 0.028727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/PineTree_4.fbx
+  artifactKey: Guid(4be8fdf697683df4998b3fbac404d46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_4.fbx using Guid(4be8fdf697683df4998b3fbac404d46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e59ae1210b52eb903d770b8859754b') in 0.032045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/PineTree_Autumn_4.fbx
+  artifactKey: Guid(384c131c5b0b48b4386e1f211823763a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Autumn_4.fbx using Guid(384c131c5b0b48b4386e1f211823763a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39ac3fa95c82161ceb9aa76a3127c6a') in 0.033993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/PineTree_1.fbx
+  artifactKey: Guid(a50880e0ee5a6a34980c66bb5d74d185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_1.fbx using Guid(a50880e0ee5a6a34980c66bb5d74d185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea66fdd4a7196abf2e0ddb7b7ac79cf4') in 0.030154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_2.fbx
+  artifactKey: Guid(054e6406f4dd2114d953eceb4ab4d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_2.fbx using Guid(054e6406f4dd2114d953eceb4ab4d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56b9833fed70404b6b9d6c59fbebcbe') in 0.031650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_3.fbx
+  artifactKey: Guid(490e937f26d8a38459d77556a8210299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_3.fbx using Guid(490e937f26d8a38459d77556a8210299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9e4bc85ad6dcbcfa87508ce6ffeebb') in 0.029403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_Autumn_1.fbx
+  artifactKey: Guid(97b7ab43bb38910418f30368bd3f5243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Autumn_1.fbx using Guid(97b7ab43bb38910418f30368bd3f5243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14321c1f6f4030c3b8a66ac0e567cc89') in 0.036093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_Autumn_2.fbx
+  artifactKey: Guid(f75fbc85cac3670418693343f6149c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Autumn_2.fbx using Guid(f75fbc85cac3670418693343f6149c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36f470f9e99ff8f504048485b949d47') in 0.034317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/PineTree_Autumn_5.fbx
+  artifactKey: Guid(f16b731ca829a4546abe4fcdc21fe4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Autumn_5.fbx using Guid(f16b731ca829a4546abe4fcdc21fe4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8ebcf7e5454c2b8f91168f973cf2e9') in 0.036090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.362869 seconds.
+  path: Assets/Models/NaturePack/PineTree_Snow_1.fbx
+  artifactKey: Guid(5a1bb7a7d882410428b5ef0a083283ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Snow_1.fbx using Guid(5a1bb7a7d882410428b5ef0a083283ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae3c3826b4b517e8cb10473e3f03732') in 0.038199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/NaturePack/Plant_4.fbx
+  artifactKey: Guid(827684a5262e7604fa191af1b5cbf7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Plant_4.fbx using Guid(827684a5262e7604fa191af1b5cbf7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19381c7c271ed56b0d8b0efb84a25dc1') in 0.026405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/NaturePack/PineTree_Snow_5.fbx
+  artifactKey: Guid(1e94ea517868ff64c974fce86e3fe3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Snow_5.fbx using Guid(1e94ea517868ff64c974fce86e3fe3a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea497995cc0e73e62a4d4e361cec955') in 0.036722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_Snow_3.fbx
+  artifactKey: Guid(90a0fd5fe78ae7c48a5cf66077fc7829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Snow_3.fbx using Guid(90a0fd5fe78ae7c48a5cf66077fc7829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c3e971a758d9b2fbe8ce6d786c4fcc') in 0.033716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/PineTree_Snow_4.fbx
+  artifactKey: Guid(5bbc0fb725a513e4fa3e52d2d96d0e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Snow_4.fbx using Guid(5bbc0fb725a513e4fa3e52d2d96d0e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc83adbcd6d61547982c6988c195b44') in 0.035581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Plant_1.fbx
+  artifactKey: Guid(cc223d1aec3e45b49b0f8b88128d458b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Plant_1.fbx using Guid(cc223d1aec3e45b49b0f8b88128d458b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4db29f3e176deaaa06ba46a3f72c713') in 0.026045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/Plant_5.fbx
+  artifactKey: Guid(c55e0e98453a52c439f7067c5e016cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Plant_5.fbx using Guid(c55e0e98453a52c439f7067c5e016cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678a082d1ce7931018262fca7be1184c') in 0.031252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/Plant_3.fbx
+  artifactKey: Guid(745a756cdf3048c4ca8413ab4b142c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Plant_3.fbx using Guid(745a756cdf3048c4ca8413ab4b142c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0375a4017a0a2542543fa69d0eed7f7f') in 0.027029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/NaturePack/PineTree_Snow_2.fbx
+  artifactKey: Guid(08611f89b0c767a4c8b59f5670d3e237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/PineTree_Snow_2.fbx using Guid(08611f89b0c767a4c8b59f5670d3e237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fdac080bbe3239bb5d71657b210017') in 0.034879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Plant_2.fbx
+  artifactKey: Guid(688f87b374d0dc24e896c06ec9ea6de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Plant_2.fbx using Guid(688f87b374d0dc24e896c06ec9ea6de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d81c779a0a24e8283a679bec02bcb9') in 0.032694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Rock_1.fbx
+  artifactKey: Guid(0fde820c8cae7e548b778ef35f4c637d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_1.fbx using Guid(0fde820c8cae7e548b778ef35f4c637d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df13999e5fdc377f55ee0400b0e859e9') in 0.025081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.673132 seconds.
+  path: Assets/Models/NaturePack/Rock_2.fbx
+  artifactKey: Guid(3262456bec7901c48a959c08afad9283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_2.fbx using Guid(3262456bec7901c48a959c08afad9283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f11defc8e0b2fd50f961876199c7075') in 0.030424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_1.fbx
+  artifactKey: Guid(42b1fd789d3ac774c93f8fd815251311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_1.fbx using Guid(42b1fd789d3ac774c93f8fd815251311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd678c30349a56666c10219ba6a5f6d3') in 0.029593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_4.fbx
+  artifactKey: Guid(1c3dd8da4494be74badd00a3e2a468f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_4.fbx using Guid(1c3dd8da4494be74badd00a3e2a468f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0500d8fcb9d16a1ce2f16e17099f5ff') in 0.032993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Rock_4.fbx
+  artifactKey: Guid(f5d1a6a4c7ae4824997a34de98ea73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_4.fbx using Guid(f5d1a6a4c7ae4824997a34de98ea73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ed0792a8390d75dcb7bb4ac2dae3ce') in 0.024512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_6.fbx
+  artifactKey: Guid(19723c0ee969ce4438c10edeabe5d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_6.fbx using Guid(19723c0ee969ce4438c10edeabe5d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1475b33404965e9a0d59e81216f00ff') in 0.026683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_5.fbx
+  artifactKey: Guid(2b3e42ac2a4a078498182eb5ef506eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_5.fbx using Guid(2b3e42ac2a4a078498182eb5ef506eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f730f41b372b138ccb9b2d3e7d1478') in 0.026524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_3.fbx
+  artifactKey: Guid(7200b8dad17971c439988cc8a3d5ee70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_3.fbx using Guid(7200b8dad17971c439988cc8a3d5ee70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be748e9e3d5a67e427ead682a885bac') in 0.030346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_5.fbx
+  artifactKey: Guid(32552064eb2316745a6e3e3c52c45c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_5.fbx using Guid(32552064eb2316745a6e3e3c52c45c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d64559f7f244ac407538e47b03f0a90') in 0.031495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Rock_7.fbx
+  artifactKey: Guid(42689a5b983f46b4eadd33bfa322662f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_7.fbx using Guid(42689a5b983f46b4eadd33bfa322662f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61e47e440106dd7f17bd1dfcc917317') in 0.025596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_2.fbx
+  artifactKey: Guid(2b912455b1a23d64a919627f43249663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_2.fbx using Guid(2b912455b1a23d64a919627f43249663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b825bdfdd5de2a21aeca939fcb8f557') in 0.029003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_3.fbx
+  artifactKey: Guid(3f1b5fc4e2b3c7c42bbca0af27dbc52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_3.fbx using Guid(3f1b5fc4e2b3c7c42bbca0af27dbc52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cad0f852ea4950faf9e647e21ac2624') in 0.025860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.349105 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_6.fbx
+  artifactKey: Guid(2d11a074ceff8f544ae5c990f1efc4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_6.fbx using Guid(2d11a074ceff8f544ae5c990f1efc4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e84c826e83aa881a714a5c4ba7f6b3') in 0.031764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Rock_Moss_7.fbx
+  artifactKey: Guid(0264fe7a26bc4224f93a3636cced1189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Moss_7.fbx using Guid(0264fe7a26bc4224f93a3636cced1189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293267de3ca2865498c364bcfbb8e2f4') in 0.029843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_6.fbx
+  artifactKey: Guid(df79f847822142f47a7d742ebb6b0dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_6.fbx using Guid(df79f847822142f47a7d742ebb6b0dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde3b510130c5852ba38ded02e4ff61d') in 0.031035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_2.fbx
+  artifactKey: Guid(ee5f634e14669d04c9aeff2a0e9575f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_2.fbx using Guid(ee5f634e14669d04c9aeff2a0e9575f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdea7baea0e6a15a4a6086a40f42fff') in 0.028799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/TreeStump.fbx
+  artifactKey: Guid(68bd730119922be4288ed7a5b97fabc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/TreeStump.fbx using Guid(68bd730119922be4288ed7a5b97fabc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42e2d8ae88c2a66a57a391ccf969450') in 0.034370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_7.fbx
+  artifactKey: Guid(6b400716042ac2040a3bb68b61448378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_7.fbx using Guid(6b400716042ac2040a3bb68b61448378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1758a875be63d3f682f9e9759e21213') in 0.030179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_3.fbx
+  artifactKey: Guid(74fb35ab22dfe954aaec84fe8baf70d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_3.fbx using Guid(74fb35ab22dfe954aaec84fe8baf70d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e4e9e8897e7cb5b98a81a3992332c7') in 0.031142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_5.fbx
+  artifactKey: Guid(d9dc4564ddb81964082cee071485e9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_5.fbx using Guid(d9dc4564ddb81964082cee071485e9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25feb0b9fee90f17a372a2ba0d23f4cb') in 0.029991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_1.fbx
+  artifactKey: Guid(918e8006f49a67a44aad94f5e262cc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_1.fbx using Guid(918e8006f49a67a44aad94f5e262cc5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f71e055e63b3f1bee917434797ae5b0') in 0.031519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Rock_Snow_4.fbx
+  artifactKey: Guid(d45b7121e01132d4583024b5d2b577aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Rock_Snow_4.fbx using Guid(d45b7121e01132d4583024b5d2b577aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132cc65e16693021601cf06f156cdaa5') in 0.031737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/TreeStump_Moss.fbx
+  artifactKey: Guid(1f1a4e2b325f86240bc9e7ff5eb43c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/TreeStump_Moss.fbx using Guid(1f1a4e2b325f86240bc9e7ff5eb43c4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ddf371b728910f6f2a4c5b420280d5') in 0.031675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.436558 seconds.
+  path: Assets/Models/NaturePack/TreeStump_Snow.fbx
+  artifactKey: Guid(9a02c39822c49f8499a991100c990318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/TreeStump_Snow.fbx using Guid(9a02c39822c49f8499a991100c990318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58b395af7bfc2dbfc95318ec4709903') in 0.031823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Wheat.fbx
+  artifactKey: Guid(54381bf2a9b8d254c9475e67388ecac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Wheat.fbx using Guid(54381bf2a9b8d254c9475e67388ecac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3d0be1fa910317aa7659659730a766') in 0.024814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Willow_5.fbx
+  artifactKey: Guid(2e8291df6c3291e499951db896603922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_5.fbx using Guid(2e8291df6c3291e499951db896603922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a232322e4068bd78b18e1452e80b3d5') in 0.032608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/Willow_Autumn_3.fbx
+  artifactKey: Guid(cf9da5ddf0812e146a43fdc39e713ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Autumn_3.fbx using Guid(cf9da5ddf0812e146a43fdc39e713ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51a5342cb08565d3061b18c107aaaa1') in 0.030586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_1.fbx
+  artifactKey: Guid(5e66cce99a12ceb4f8f49297c24076c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_1.fbx using Guid(5e66cce99a12ceb4f8f49297c24076c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c10627f0c013340c934b2c1c9db9c5') in 0.026878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_Snow_1.fbx
+  artifactKey: Guid(48e27eeb2197fb1499a07e41426e17dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_Snow_1.fbx using Guid(48e27eeb2197fb1499a07e41426e17dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55b3fb28707491935f616430744b2c5') in 0.029260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/NaturePack/Willow_4.fbx
+  artifactKey: Guid(70a1a90be626fdd458557038675bf528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_4.fbx using Guid(70a1a90be626fdd458557038675bf528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8311c07ded74003cc3a125d2e1c04094') in 0.031014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_Snow_3.fbx
+  artifactKey: Guid(f78fc5651aab3a2449be468c387a7470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_Snow_3.fbx using Guid(f78fc5651aab3a2449be468c387a7470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e14e96150a1ec7b3a374498754889e6') in 0.029727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_5.fbx
+  artifactKey: Guid(11c07a253e21ae74f88837064e030d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_5.fbx using Guid(11c07a253e21ae74f88837064e030d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dccf3b38a89de364014c1f4bb2a114') in 0.023960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_Snow_5.fbx
+  artifactKey: Guid(51e94d1172d265b4684306d82fa7fb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_Snow_5.fbx using Guid(51e94d1172d265b4684306d82fa7fb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a9a7484c80929084a0c9800db6a4b5') in 0.029303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_2.fbx
+  artifactKey: Guid(a33d75c6823d22c4e8db3c2c827075dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_2.fbx using Guid(a33d75c6823d22c4e8db3c2c827075dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d41f340236dfc8c49e27881eba9d7d') in 0.026151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Autumn_4.fbx
+  artifactKey: Guid(46b00280d8b2b11418d1f1cdb9792e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Autumn_4.fbx using Guid(46b00280d8b2b11418d1f1cdb9792e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa24e116ab62d271fdea04f71641c0f0') in 0.030609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/NaturePack/Willow_1.fbx
+  artifactKey: Guid(3f3db42b16d811f42ad96dbf15ef07aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_1.fbx using Guid(3f3db42b16d811f42ad96dbf15ef07aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa6faa4d0d91e4ef7699ffff62200dd') in 0.029260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/NaturePack/Willow_Autumn_5.fbx
+  artifactKey: Guid(c09ef9760cd3eb34fa84487137946068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Autumn_5.fbx using Guid(c09ef9760cd3eb34fa84487137946068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436abbe6d4ce0e0a1a76dbf5c98e54cd') in 0.031098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/NaturePack/Willow_3.fbx
+  artifactKey: Guid(4cbe45d965d974941a7b0703e0138b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_3.fbx using Guid(4cbe45d965d974941a7b0703e0138b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb84ae4a12addd673d608f8c75f06dc') in 0.032170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Willow_Autumn_1.fbx
+  artifactKey: Guid(a207e055dce6a784ebeab917e8cb6883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Autumn_1.fbx using Guid(a207e055dce6a784ebeab917e8cb6883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bf68773bc7e03d3ced6aa815851870') in 0.031906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_Snow_2.fbx
+  artifactKey: Guid(10a71acf292bf4c4eae028e4d1d2e033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_Snow_2.fbx using Guid(10a71acf292bf4c4eae028e4d1d2e033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4722f61defbb99a6c2bba982a2f260b') in 0.030010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_Snow_4.fbx
+  artifactKey: Guid(306b3d6bb7b7aaf4c85440b160deb735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_Snow_4.fbx using Guid(306b3d6bb7b7aaf4c85440b160deb735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a7de6cbb57b35e53e7b7721ab209fb') in 0.030118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/NaturePack/Willow_2.fbx
+  artifactKey: Guid(3a1fcc93edf6f13439f862227ef08b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_2.fbx using Guid(3a1fcc93edf6f13439f862227ef08b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7a7363bd2e98127c4abf6baa7a8054') in 0.031644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/NaturePack/Willow_Autumn_2.fbx
+  artifactKey: Guid(234e546988148d043845104125349fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Autumn_2.fbx using Guid(234e546988148d043845104125349fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f817ed9052a12d5aacff4ef09afb55ab') in 0.029790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_3.fbx
+  artifactKey: Guid(da57943b1b89ead42bc163530a1b6428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_3.fbx using Guid(da57943b1b89ead42bc163530a1b6428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8283f141968fb36cf114a4883f0263ee') in 0.024511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/NaturePack/Willow_Dead_4.fbx
+  artifactKey: Guid(aaa89d10dbc810f44b3fb34c66e7c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/NaturePack/Willow_Dead_4.fbx using Guid(aaa89d10dbc810f44b3fb34c66e7c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b640e11015309d4fec9eb5981d724fed') in 0.026258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 26.557194 seconds.
+  path: Assets/Terrain/Textures/Snow/snow_super_dark.png
+  artifactKey: Guid(6ae24699072028c47b5e79666801b5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Snow/snow_super_dark.png using Guid(6ae24699072028c47b5e79666801b5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01757c9c7e4fbca287df7ff7344e5e61') in 0.055533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 96.608267 seconds.
+  path: Assets/Terrain/Textures/Dirt/dirt_normal/dirt_normal_up.png
+  artifactKey: Guid(0dd443a2df90ef247be261e60d0ce83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Dirt/dirt_normal/dirt_normal_up.png using Guid(0dd443a2df90ef247be261e60d0ce83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ddc460ae369206a9fc29335b8d38f76') in 0.038538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Terrain/Textures/Snow/snow_normal.png
+  artifactKey: Guid(75b807f3d28ec1644aeac1e8f4a2d857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Snow/snow_normal.png using Guid(75b807f3d28ec1644aeac1e8f4a2d857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3c828038e5c9766b0fd07e3253ca66') in 0.032651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Terrain/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_up.png
+  artifactKey: Guid(7f9cef2ef4dd02d4c9ffdf0b77dc74ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Grass/Grass_swamp_normal/Grass_swamp_normal_up.png using Guid(7f9cef2ef4dd02d4c9ffdf0b77dc74ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dedc4f6802f00dc937e72c40ac2bb70') in 0.031859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Terrain/Textures/Grass/Grass_normal/Grass_normal_up.png
+  artifactKey: Guid(deb64ef6450ec574db0af67225551acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Grass/Grass_normal/Grass_normal_up.png using Guid(deb64ef6450ec574db0af67225551acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15f8a03c0047f0fdd5b9bf7fa56fb67') in 0.032357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Terrain/Textures/Grass/Grass_desatured/Grass_desatured_right.png
+  artifactKey: Guid(8cd3f7acfe19d4a4cb849c2b2ab2172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Grass/Grass_desatured/Grass_desatured_right.png using Guid(8cd3f7acfe19d4a4cb849c2b2ab2172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b1b0006b49ff166a23ac83b383cfb1') in 0.032451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Terrain/Textures/Grass/Grass_corrupted/Grass_corrupted_left.png
+  artifactKey: Guid(9f92a1df145a03f4e8cc6de30c1f413a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Textures/Grass/Grass_corrupted/Grass_corrupted_left.png using Guid(9f92a1df145a03f4e8cc6de30c1f413a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe59e2cc1ca2a575d9d257fcb722a2ba') in 0.033024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.419416 seconds.
+  path: Assets/Terrain/Grass Light.terrainlayer
+  artifactKey: Guid(0018d4faad7a66f43ad6cc9274ae42fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Grass Light.terrainlayer using Guid(0018d4faad7a66f43ad6cc9274ae42fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36759476f86ef6bd4be334292e302ac6') in 0.029530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.584 seconds
+Refreshing native plugins compatible for Editor in 3.42 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.539 seconds
+Domain Reload Profiling: 2119ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (279ms)
+		LoadAssemblies (359ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1539ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (630ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (389ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 3.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5331 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (1.4 MB). Loaded Objects now: 6124.
+Memory consumption went from 207.7 MB to 206.3 MB.
+Total: 5.059800 ms (FindLiveObjects: 0.585800 ms CreateObjectMapping: 1.049800 ms MarkObjects: 2.963000 ms  DeleteObjects: 0.460500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
