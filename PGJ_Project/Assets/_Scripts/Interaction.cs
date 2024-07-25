@@ -15,7 +15,7 @@ public class Interaction : MonoBehaviour
 
     private void Update()
     {
-        if (Physics.Raycast(RayOrigin.transform.position, _cam.transform.forward, out var hit, 6, InteractableLayer)) //TODO it goes through stuff
+        if (Physics.Raycast(RayOrigin.transform.position, _cam.transform.forward, out var hit, 6, InteractableLayer))
         {
             if (!_currentTarget)
             {
@@ -36,11 +36,6 @@ public class Interaction : MonoBehaviour
                 _currentTarget = null;
             }
         }
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawRay(RayOrigin.transform.position, _cam!.transform.forward);
     }
 }
 

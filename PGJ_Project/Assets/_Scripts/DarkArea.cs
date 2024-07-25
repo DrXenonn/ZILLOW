@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class DarkArea : MonoBehaviour
 {
-    [SerializeField] private BoolVariable IsInShadow, IsNight;
+    [SerializeField] private BoolVariable IsInDarkArea;
     private void OnTriggerStay(Collider other)
     {
-        if (!IsInShadow.Value && !other.CompareTag("Player")) return;
-        IsInShadow.Value = true;
+        if (!other.CompareTag("Player")) return;
+        IsInDarkArea.Value = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (!other.CompareTag("Player") && IsNight.Value) return;
-        IsInShadow.Value = false;
+        if (!other.CompareTag("Player")) return;
+        IsInDarkArea.Value = false;
     }
 }

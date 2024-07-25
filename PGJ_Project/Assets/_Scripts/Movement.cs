@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-    [Header("Refrences")]
+    [Header("References")]
     [SerializeField] private Rigidbody Rb;
     [SerializeField] private Transform Cam;
     [SerializeField] private Transform PlayerFeet;

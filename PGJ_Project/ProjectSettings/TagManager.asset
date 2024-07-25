@@ -7,6 +7,9 @@ TagManager:
   - Interaction
   - Collect
   - Magnet
+  - EnemyAttackRange
+  - EnemyTrigger
+  - SafeZone
   layers:
   - Default
   - TransparentFX

@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675b06e8a109e1d40949dea324f46e9a, type: 3}
   m_Name: Poison Potion
   m_EditorClassIdentifier: 
-  ID: 6
-  ItemType: 0
+  ID: 10
+  ItemType: 1
   Name: Poison Potion
-  Description: PP
+  Description: Inflicts poison damage over time in an area.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
-  ModelPrefab: {fileID: 2237896111627220299, guid: c366f5b5979151141af55b8a7fef89e3,
-    type: 3}
+  Icon: {fileID: 0}
+  ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

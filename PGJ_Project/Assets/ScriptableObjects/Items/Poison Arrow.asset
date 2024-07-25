@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675b06e8a109e1d40949dea324f46e9a, type: 3}
   m_Name: Poison Arrow
   m_EditorClassIdentifier: 
-  ID: 5
-  ItemType: 0
+  ID: 14
+  ItemType: 2
   Name: Poison Arrow
-  Description: P Arrow
+  Description: Toxic arrow that inflicts poison on hit.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: e09acaa3d45f5334bb59cf5d4e4620e0, type: 3}
-  ModelPrefab: {fileID: 2237896111627220299, guid: c366f5b5979151141af55b8a7fef89e3,
-    type: 3}
+  Icon: {fileID: 0}
+  ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

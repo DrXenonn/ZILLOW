@@ -10,25 +10,30 @@ public class Health : MonoBehaviour
     [SerializeField] private FloatVariable PlayerHealth;
     [SerializeField] private Volume Volume;
     [SerializeField] private GameObject DarknessBar;
-    [SerializeField] private BoolVariable IsInShadow;
+    [SerializeField] private BoolVariable  IsNight, IsInSafeZone, IsInDarkArea;
     [SerializeField] private Image Bar1, Bar2;
     [SerializeField] private float LowHp;
     [SerializeField] private float MaxHealth, MaxVignette, MaxVignetteSmoothness, MaxImageDarkness;
+    [SerializeField] private int DarknessDamageTick;
+    [SerializeField] private int HealTick;
     private float _originalVignette, _originalVignetteSmoothness;
     private Color _color;
     private Vignette _vignette;
-    
+
     private void Start()
     {
         PlayerHealth.Value = MaxHealth;
         _color = BlackImage.color;
-        IsInShadow.Value = false;
-        
+        IsNight.Value = false;
+        IsInSafeZone.Value = true;
+        IsInDarkArea.Value = false;
+
         if (Volume.profile.TryGet(out _vignette))
         {
             _originalVignette = _vignette.intensity.value;
             _originalVignetteSmoothness = _vignette.smoothness.value;
         }
+
         InvokeRepeating(nameof(HandleShadow), 0.1f, 0.1f);
     }
 
@@ -48,6 +53,7 @@ public class Health : MonoBehaviour
     private void TakeDamage(int damage)
     {
         PlayerHealth.Value = Mathf.Max(PlayerHealth.Value - damage, 0);
+        //TODO Check death
         UpdateEffects();
     }
 
@@ -80,20 +86,45 @@ public class Health : MonoBehaviour
     private void Heal(int value)
     {
         if (PlayerHealth.Value >= MaxHealth) return;
-        
+
         PlayerHealth.Value = Mathf.Min(PlayerHealth.Value + value, MaxHealth);
         UpdateEffects();
     }
 
     private void HandleShadow()
     {
-        if (IsInShadow.Value)
+        var isNight = IsNight.Value;
+        var inSafeZone = IsInSafeZone.Value;
+        var inDarkArea = IsInDarkArea.Value;
+
+        if (isNight)
         {
-            TakeDamage(2);
+            if (inSafeZone)
+            {
+                Heal(HealTick);
+            }
+            else if (inDarkArea)
+            {
+                TakeDamage(DarknessDamageTick);
+            }
+            else
+            {
+                TakeDamage(DarknessDamageTick);
+            }
+        }
+        else if (!inDarkArea)
+        {
+            Heal(HealTick);
         }
         else
         {
-            Heal(1);
+            TakeDamage(DarknessDamageTick);
         }
+    }
+
+
+    public void OnTakeDamage(Component sender, object data)
+    {
+        TakeDamage((int)data);
     }
 }
