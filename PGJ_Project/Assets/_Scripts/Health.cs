@@ -22,6 +22,7 @@ public class Health : MonoBehaviour
     {
         PlayerHealth.Value = MaxHealth;
         _color = BlackImage.color;
+        IsInShadow.Value = false;
         
         if (Volume.profile.TryGet(out _vignette))
         {

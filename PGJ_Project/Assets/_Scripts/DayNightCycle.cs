@@ -14,6 +14,7 @@ public class SkyboxBlender : MonoBehaviour
     [SerializeField] private float AmbientIntensity;
     [SerializeField] private float ReflectionsIntensity;
     [SerializeField] private float ShadowStrength;
+    [SerializeField] private BoolVariable IsNight;
     
     private Material _targetMaterial;
     private float _transitionTimer;
@@ -46,6 +47,7 @@ public class SkyboxBlender : MonoBehaviour
         _startingLightIntensity = GlobalLight.intensity;
         _startingTemperature = GlobalLight.colorTemperature;
         _startingRotation = GlobalLight.transform.rotation;
+        IsNight.Value = false;
 
         _targetMaterial = new Material(BlendMaterial);
 
@@ -66,6 +68,7 @@ public class SkyboxBlender : MonoBehaviour
         }
         else
         {
+            IsNight.Value = false;
             StartTransition(NightMaterial);
         }
     }
@@ -77,7 +80,6 @@ public class SkyboxBlender : MonoBehaviour
 
     private void UpdateScript()
     {
-        //TODO: Globallight should rotate constantly.
         if (!_isTransitioning) return;
         
         var progress = Mathf.Clamp01(_transitionTimer / TransitionDuration);
@@ -93,6 +95,7 @@ public class SkyboxBlender : MonoBehaviour
             RenderSettings.reflectionIntensity = Mathf.Lerp(1, ReflectionsIntensity, progress);
             GlobalLight.shadowStrength = Mathf.Lerp(1, ShadowStrength, progress);
             if (!(_skyboxTransitionValue >= 1)) return;
+            IsNight.Value = true;
             _isDay = false;
             _isTransitioning = false;
         }
