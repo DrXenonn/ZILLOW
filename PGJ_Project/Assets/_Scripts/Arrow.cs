@@ -14,6 +14,7 @@ public class Arrow : MonoBehaviour
         if (!IsPoison) return;
 
         enemyHealth.SetPoison(true);
+        Destroy(gameObject);
     }
 
     private void Start()
