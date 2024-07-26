@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     [SerializeField] private FloatVariable PlayerHealth;
     [SerializeField] private Volume Volume;
     [SerializeField] private GameObject DarknessBar;
-    [SerializeField] private BoolVariable  IsNight, IsInSafeZone, IsInDarkArea;
+    [SerializeField] private BoolVariable IsNight, IsInSafeZone, IsInDarkArea;
     [SerializeField] private Image Bar1, Bar2;
     [SerializeField] private float LowHp;
     [SerializeField] private float MaxHealth, MaxVignette, MaxVignetteSmoothness, MaxImageDarkness;
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
             _originalVignetteSmoothness = _vignette.smoothness.value;
         }
 
-        InvokeRepeating(nameof(HandleShadow), 0.1f, 0.1f);
+        InvokeRepeating(nameof(HandleShadow), 0.05f, 0.05f);
     }
 
     private void Update()

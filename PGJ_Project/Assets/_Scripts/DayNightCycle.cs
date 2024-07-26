@@ -15,7 +15,7 @@ public class SkyboxBlender : MonoBehaviour
     [SerializeField] private float ReflectionsIntensity;
     [SerializeField] private float ShadowStrength;
     [SerializeField] private BoolVariable IsNight;
-    
+
     private Material _targetMaterial;
     private float _transitionTimer;
     private bool _isTransitioning;
@@ -25,7 +25,7 @@ public class SkyboxBlender : MonoBehaviour
     private Quaternion _startingRotation;
     private bool _isDay = true;
     private float _skyboxTransitionValue;
-    
+
     private const string TintColor = "_TintColor";
     private const string Exposure = "_Exposure";
     private const string FogIntensity = "_FogIntensity";
@@ -33,7 +33,7 @@ public class SkyboxBlender : MonoBehaviour
     private const string FogSmoothness = "_FogSmoothness";
     private const string FogFill = "_FogFill";
     private const string CubemapTransition = "_CubemapTransition";
-    
+
     private static readonly int Transition = Shader.PropertyToID(CubemapTransition);
     private static readonly int TintColor1 = Shader.PropertyToID(TintColor);
     private static readonly int Exposure1 = Shader.PropertyToID(Exposure);
@@ -41,7 +41,7 @@ public class SkyboxBlender : MonoBehaviour
     private static readonly int Height = Shader.PropertyToID(FogHeight);
     private static readonly int Smoothness = Shader.PropertyToID(FogSmoothness);
     private static readonly int Fill = Shader.PropertyToID(FogFill);
-    
+
     private void Start()
     {
         _startingLightIntensity = GlobalLight.intensity;
@@ -81,7 +81,7 @@ public class SkyboxBlender : MonoBehaviour
     private void UpdateScript()
     {
         if (!_isTransitioning) return;
-        
+
         var progress = Mathf.Clamp01(_transitionTimer / TransitionDuration);
         _transitionTimer += 0.1f;
 
@@ -114,7 +114,7 @@ public class SkyboxBlender : MonoBehaviour
             _isTransitioning = false;
         }
     }
-    
+
     private void StartTransition(Material startMaterial)
     {
         _transitionTimer = 0f;

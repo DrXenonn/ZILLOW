@@ -10,6 +10,7 @@ TagManager:
   - EnemyAttackRange
   - EnemyTrigger
   - SafeZone
+  - Enemy
   layers:
   - Default
   - TransparentFX
