@@ -1,0 +1,104 @@
+using TMPro;
+using Unity.Mathematics;
+using UnityEngine;
+using UnityEngine.UI;
+
+[System.Serializable]
+public struct PotionUIs
+{
+    public Item PotionItem;
+    public Image Icon;
+    public TextMeshProUGUI Text;
+    public GameObject Highlight;
+    public GameObject PotionPrefab;
+}
+
+public class PotionUsing : MonoBehaviour
+{
+    [SerializeField] private GameObjectVariable SelectedPotion;
+    [SerializeField] private Transform FirePoint;
+    [SerializeField] private BoolVariable CanShoot;
+    [SerializeField] private GameEvent OnShoot;
+    [SerializeField] private InventoryData PlayerInventory;
+    [SerializeField] private PotionUIs[] PotionUIs;
+    [SerializeField] private float FireForce;
+    private Item _selectedPotionItem;
+    private Camera _cam;
+    
+    private void Awake()
+    {
+        _cam = Camera.main;
+        CanShoot.Value = true;
+    }
+
+    private void OnEnable()
+    {
+        UpdateUI();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot.Value)
+        {
+            if (PlayerInventory.Inventory[_selectedPotionItem] > 0)
+            {
+                var arrow = Instantiate(SelectedPotion.Value, FirePoint.transform.position, quaternion.identity);
+                arrow.GetComponent<Rigidbody>().AddForce((_cam.transform.forward) * FireForce, ForceMode.Impulse);
+                OnShoot.Raise();
+                PlayerInventory.Inventory[_selectedPotionItem] -= 1;
+                UpdateUI();
+            }
+            else
+            {
+                Debug.Log("Out of Potions!");
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (!PlayerInventory.Inventory.ContainsKey(PotionUIs[0].PotionItem)) return;
+            EnableHighlight(0);
+            SelectedPotion.Value = PotionUIs[0].PotionPrefab;
+            _selectedPotionItem = PotionUIs[0].PotionItem;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (!PlayerInventory.Inventory.ContainsKey(PotionUIs[1].PotionItem)) return;
+            EnableHighlight(1);
+            SelectedPotion.Value = PotionUIs[1].PotionPrefab;
+            _selectedPotionItem = PotionUIs[1].PotionItem;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (!PlayerInventory.Inventory.ContainsKey(PotionUIs[2].PotionItem)) return;
+            EnableHighlight(2);
+            SelectedPotion.Value = PotionUIs[2].PotionPrefab;
+            _selectedPotionItem = PotionUIs[2].PotionItem;
+        }
+    }
+
+    private void UpdateUI()
+    {
+        foreach (var potionUI in PotionUIs)
+        {
+            if (!PlayerInventory.Inventory.ContainsKey(potionUI.PotionItem)) continue;
+            
+            potionUI.Icon.sprite = potionUI.PotionItem.Icon;
+            potionUI.Text.text = "x" + PlayerInventory.Inventory[potionUI.PotionItem];
+        }
+    }
+
+    private void EnableHighlight(int index)
+    {
+        foreach (var arrowUI in PotionUIs)
+        {
+            arrowUI.Highlight.SetActive(false);
+        }
+        PotionUIs[index].Highlight.SetActive(true);
+    }
+
+    public void OnItemPickup(Component sender, object data)
+    {
+        Invoke(nameof(UpdateUI), 0.1f);
+    }
+}

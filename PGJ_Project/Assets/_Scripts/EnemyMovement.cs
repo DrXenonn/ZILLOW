@@ -24,9 +24,14 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("EnemyTrigger")) return;
+        FollowPlayer();
+    }
+
+    public void FollowPlayer()
+    {
         _isInRange = true;
     }
-    
+
     /*private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("EnemyTrigger")) return;

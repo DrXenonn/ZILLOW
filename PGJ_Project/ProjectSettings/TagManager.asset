@@ -11,6 +11,8 @@ TagManager:
   - EnemyTrigger
   - SafeZone
   - Enemy
+  - FxTemporaire
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private Image HealthBar, PoisonImage;
     [SerializeField] private FloatVariable PoisonDamage, PoisonDuration;
+    [SerializeField] private EnemyMovement Movement;
     [SerializeField] private int Health;
     private bool _poison;
     private int _maxHealth;
@@ -50,6 +51,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Health -= value;
         HealthBar.fillAmount = (float)Health / _maxHealth;
+        Movement.FollowPlayer();
         HandleDeath();
     }
 

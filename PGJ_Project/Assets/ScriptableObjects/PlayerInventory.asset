@@ -14,19 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory:
     _serializedList:
-    - Key: {fileID: 11400000, guid: d178dd1a5e5efdc41b1e6277c4094027, type: 2}
+    - Key: {fileID: 11400000, guid: 891e4bcf5901c254e944b7e918ce73c4, type: 2}
+      Value: 107
+    - Key: {fileID: 11400000, guid: ae1399e41fb60d84287d44754ba80aaf, type: 2}
+      Value: 61
+    - Key: {fileID: 11400000, guid: 08ecad7a5edc64f40bc5e3bf6a648290, type: 2}
+      Value: 78
+    - Key: {fileID: 11400000, guid: 35143fca97a8bc245b1b237eb231786c, type: 2}
+      Value: 969
+    - Key: {fileID: 11400000, guid: 09b94ee78b7d6e3479b1facecb2f4372, type: 2}
       Value: 0
-    - Key: {fileID: 11400000, guid: f9d8c5ab726e43e4eb69a11a8a748175, type: 2}
-      Value: 41
-    - Key: {fileID: 11400000, guid: 4dcd7813003c0a044bf2a7fe963c24c7, type: 2}
-      Value: 5
-    - Key: {fileID: 11400000, guid: bd7035237deba914898d0a47b054717f, type: 2}
-      Value: 0
-    - Key: {fileID: 11400000, guid: 59893c70b69389044808792203216bde, type: 2}
-      Value: 5
-    - Key: {fileID: 11400000, guid: 2601b9a3a10c9f14f94a72bf068beb3e, type: 2}
-      Value: 5
-    - Key: {fileID: 11400000, guid: 05686cd8109a3d14daf8785e8f317ddd, type: 2}
-      Value: 0
-    - Key: {fileID: 11400000, guid: 0d909ddbc9c63e04bb0dcb087ed83509, type: 2}
-      Value: 2

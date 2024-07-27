@@ -1,3 +1,5 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -12,11 +14,14 @@ public class Health : MonoBehaviour
     [SerializeField] private GameObject DarknessBar;
     [SerializeField] private BoolVariable IsNight, IsInSafeZone, IsInDarkArea;
     [SerializeField] private Image Bar1, Bar2;
+    [SerializeField] private Image ADImage;
+    [SerializeField] private TextMeshProUGUI ADText;
     [SerializeField] private float LowHp;
     [SerializeField] private float MaxHealth, MaxVignette, MaxVignetteSmoothness, MaxImageDarkness;
     [SerializeField] private int DarknessDamageTick;
     [SerializeField] private int HealTick;
     private float _originalVignette, _originalVignetteSmoothness;
+    private float _antiDarknessTime;
     private Color _color;
     private Vignette _vignette;
 
@@ -35,6 +40,7 @@ public class Health : MonoBehaviour
         }
 
         InvokeRepeating(nameof(HandleShadow), 0.05f, 0.05f);
+        InvokeRepeating(nameof(HandleAntiDarkness),1, 1);
     }
 
     private void Update()
@@ -91,6 +97,34 @@ public class Health : MonoBehaviour
         UpdateEffects();
     }
 
+    public void OnAntiDarkness(Component sender, object data)
+    {
+        var time = (float)data;
+        _antiDarknessTime = time;
+        ADText.text = ((int)time).ToString();
+        ADImage.enabled = true;
+        ADText.enabled = true;
+    }
+
+    private void HandleAntiDarkness()
+    {
+        if (_antiDarknessTime <= 0)
+        {
+            ADImage.enabled = false;
+            ADText.enabled = false;
+        }
+        else
+        {
+            _antiDarknessTime--;
+            ADText.text = Mathf.RoundToInt(_antiDarknessTime).ToString();
+        }
+    }
+
+    public void OnHeal(Component sender, object data)
+    {
+        Heal((int)data);
+    }
+
     private void HandleShadow()
     {
         var isNight = IsNight.Value;
@@ -105,11 +139,17 @@ public class Health : MonoBehaviour
             }
             else if (inDarkArea)
             {
-                TakeDamage(DarknessDamageTick);
+                if (_antiDarknessTime <= 0)
+                {
+                    TakeDamage(DarknessDamageTick);
+                }
             }
             else
             {
-                TakeDamage(DarknessDamageTick);
+                if (_antiDarknessTime <= 0)
+                {
+                    TakeDamage(DarknessDamageTick);
+                }
             }
         }
         else if (!inDarkArea)
@@ -118,7 +158,10 @@ public class Health : MonoBehaviour
         }
         else
         {
-            TakeDamage(DarknessDamageTick);
+            if (_antiDarknessTime <= 0)
+            {
+                TakeDamage(DarknessDamageTick);
+            }
         }
     }
 
