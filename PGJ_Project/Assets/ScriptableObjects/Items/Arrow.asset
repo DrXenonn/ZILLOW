@@ -17,8 +17,8 @@ MonoBehaviour:
   Name: Arrow
   Description: A basic arrow from bamboo!
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 4e7c255d0141b7b46abddc432c05bc0c, type: 3}
-  UIIcon: {fileID: 21300000, guid: a65c84c7e61e90f4281bd06541ccf05b, type: 3}
+  Icon: {fileID: -39289916, guid: 4e1ee8119c514d44e998da25ab380bd2, type: 3}
+  UIIcon: {fileID: 1183637945, guid: a6b497a04a9c68743a124b098fbeb2fb, type: 3}
   ModelPrefab: {fileID: 2237896111627220299, guid: c366f5b5979151141af55b8a7fef89e3,
     type: 3}
   LogicPrefab: {fileID: 0}
