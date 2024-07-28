@@ -147,4 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnAntiDarkness: {fileID: 11400000, guid: 6faaf85c637bb7343af3984dbb6449ac, type: 2}
-  Time: 30
+  Time: 45

@@ -22,6 +22,7 @@ public class Crossbow : MonoBehaviour
     [SerializeField] private InventoryData PlayerInventory;
     [SerializeField] private ArrowUI[] ArrowUIs;
     [SerializeField] private float FireForce;
+    [SerializeField] private AudioSource SwitchAudio;
     private Item _selectedArrowItem;
     private Camera _cam;
     
@@ -37,7 +38,7 @@ public class Crossbow : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot.Value)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot.Value && _selectedArrowItem is not null && Cursor.lockState == CursorLockMode.Locked)
         {
             if (PlayerInventory.Inventory[_selectedArrowItem] > 0)
             {
@@ -82,18 +83,21 @@ public class Crossbow : MonoBehaviour
         {
             if (!PlayerInventory.Inventory.ContainsKey(arrowUI.ArrowItem)) continue;
             
-            arrowUI.Icon.sprite = arrowUI.ArrowItem.Icon;
+            arrowUI.Icon.sprite = arrowUI.ArrowItem.UIIcon;
             arrowUI.Text.text = "x" + PlayerInventory.Inventory[arrowUI.ArrowItem];
         }
     }
 
     private void EnableHighlight(int index)
     {
+        if (ArrowUIs[index].Highlight.activeSelf) return;
+
         foreach (var arrowUI in ArrowUIs)
         {
             arrowUI.Highlight.SetActive(false);
         }
         ArrowUIs[index].Highlight.SetActive(true);
+        SwitchAudio.PlayOneShot(SwitchAudio.clip);
     }
 
     public void OnItemPickup(Component sender, object data)

@@ -21,6 +21,7 @@ public class PotionUsing : MonoBehaviour
     [SerializeField] private GameEvent OnShoot;
     [SerializeField] private InventoryData PlayerInventory;
     [SerializeField] private PotionUIs[] PotionUIs;
+    [SerializeField] private AudioSource SwitchAudio;
     [SerializeField] private float FireForce;
     private Item _selectedPotionItem;
     private Camera _cam;
@@ -38,7 +39,7 @@ public class PotionUsing : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot.Value)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot.Value && _selectedPotionItem is not null && Cursor.lockState == CursorLockMode.Locked)
         {
             if (PlayerInventory.Inventory[_selectedPotionItem] > 0)
             {
@@ -83,18 +84,21 @@ public class PotionUsing : MonoBehaviour
         {
             if (!PlayerInventory.Inventory.ContainsKey(potionUI.PotionItem)) continue;
             
-            potionUI.Icon.sprite = potionUI.PotionItem.Icon;
+            potionUI.Icon.sprite = potionUI.PotionItem.UIIcon;
             potionUI.Text.text = "x" + PlayerInventory.Inventory[potionUI.PotionItem];
         }
     }
 
     private void EnableHighlight(int index)
     {
+        if (PotionUIs[index].Highlight.activeSelf) return;
+        
         foreach (var arrowUI in PotionUIs)
         {
             arrowUI.Highlight.SetActive(false);
         }
         PotionUIs[index].Highlight.SetActive(true);
+        SwitchAudio.PlayOneShot(SwitchAudio.clip);
     }
 
     public void OnItemPickup(Component sender, object data)

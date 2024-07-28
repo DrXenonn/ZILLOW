@@ -8,13 +8,19 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Enemy")) return;
-        var enemyHealth = other.GetComponent<EnemyHealth>();
-        enemyHealth.TakeDamage(Damage);
-        if (!IsPoison) return;
+        if (other.CompareTag("Enemy"))
+        {
+            var enemyHealth = other.GetComponent<EnemyHealth>();
+            enemyHealth.TakeDamage(Damage);
+            if (!IsPoison) return;
 
-        enemyHealth.SetPoison(true);
-        Destroy(gameObject);
+            enemyHealth.SetPoison(true);
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Environment") || other.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()

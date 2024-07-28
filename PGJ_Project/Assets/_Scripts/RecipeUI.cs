@@ -4,6 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
+using Random = UnityEngine.Random;
 
 public class RecipeUI : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class RecipeUI : MonoBehaviour
     private GameObject _currentHighlight;
     private Recipe _selectedRecipe;
     private bool _isCrafting;
+    
+    [Header("Sound")]
+    [SerializeField] private AudioSource AudioSource;
+    [SerializeField] private float MinPitch, MaxPitch;
 
     private void Start()
     {
@@ -141,6 +146,9 @@ public class RecipeUI : MonoBehaviour
         
         UpdateRecipes();
         StartCoroutine(nameof(FillProgressBar));
+
+        AudioSource.pitch = Random.Range(MinPitch, MaxPitch);
+        AudioSource.Play();
     }
 
     private void OnFinishProgressBar()
@@ -150,6 +158,7 @@ public class RecipeUI : MonoBehaviour
         CraftButton.SetActive(true);
         SetCraftButtonState(false);
         StartCoroutine(nameof(SpawnItems));
+        AudioSource.Stop();
     }
 
     private IEnumerator SpawnItems()

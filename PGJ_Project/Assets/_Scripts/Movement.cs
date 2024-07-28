@@ -1,3 +1,4 @@
+using System.Collections;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask GroundLayer;
     [SerializeField] private CinemachineVirtualCamera VirtualCamera;
     [SerializeField] private BoolVariable CanMove;
+    [SerializeField] private AudioSource AudioSource;
+
     [Header("Settings")]
     [SerializeField] private float DefaultMovementSpeed;
     [SerializeField] private float MinFOV, MaxFOV;
@@ -21,7 +24,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float JumpForce;
     [SerializeField] private float GroundCheckRadius;
     [SerializeField] private float JumpCooldown;
-    
+    [SerializeField] private float FadeInDuration;
+
     private Vector2 _moveInput;
     private bool _isSprinting;
     private bool _canStrafe;
@@ -36,46 +40,47 @@ public class Movement : MonoBehaviour
         CanMove.Value = true;
         _currentFOV = VirtualCamera.m_Lens.FieldOfView;
         _targetFOV = _currentFOV;
+        AudioSource.Play();
+        AudioSource.Pause();
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
         _moveInput = ctx.ReadValue<Vector2>();
+        HandleFootstepSound();
     }
 
     public void OnJump(InputAction.CallbackContext ctx)
     {
-        if (!CanMove.Value) return;
+        if (!CanMove.Value || !ctx.performed || !IsGrounded.Value || _timeSinceLatestJump < JumpCooldown)
+            return;
 
-        if (!ctx.performed) return;
-        if (!IsGrounded.Value) return;
-        if (_timeSinceLatestJump < JumpCooldown) return;
         Rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
         _timeSinceLatestJump = 0;
+        HandleFootstepSound();
     }
 
     public void OnSprint(InputAction.CallbackContext ctx)
     {
-        // ReSharper disable once CompareOfFloatsByEqualityOperator
-        if (ctx.performed)
+        if (ctx.performed && !_isSprinting)
         {
-            if (!_isSprinting)
-            {
-                MovementSpeed.Value *= SprintMultiplier;
-                _isSprinting = true;
-            }
+            MovementSpeed.Value *= SprintMultiplier;
+            _isSprinting = true;
         }
 
-        if (!ctx.canceled) return;
-        if (!_isSprinting) return;
-        MovementSpeed.Value /= SprintMultiplier;
-        _isSprinting = false;
+        if (ctx.canceled && _isSprinting)
+        {
+            MovementSpeed.Value /= SprintMultiplier;
+            _isSprinting = false;
+        }
+        
+        AudioSource.pitch = _isSprinting ? 1.3f : 1f;
+        HandleFootstepSound();
     }
-    
+
     private void UpdateCameraFOV()
     {
         _targetFOV = _isSprinting && _moveInput != Vector2.zero ? MaxFOV : MinFOV;
-        
         _currentFOV = Mathf.Lerp(_currentFOV, _targetFOV, LerpSpeed * Time.deltaTime);
         VirtualCamera.m_Lens.FieldOfView = _currentFOV;
     }
@@ -87,6 +92,8 @@ public class Movement : MonoBehaviour
         UpdateCameraFOV();
 
         _timeSinceLatestJump += Time.deltaTime;
+
+        HandleFootstepSound();
     }
 
     private void FixedUpdate()
@@ -100,9 +107,37 @@ public class Movement : MonoBehaviour
         Rb.AddForce(move.normalized * newSpeed, ForceMode.VelocityChange);
     }
 
-    public void OnDrawGizmos()
+    private void HandleFootstepSound()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(PlayerFeet.position, GroundCheckRadius);
+        var isMoving = _moveInput != Vector2.zero;
+        if (IsGrounded.Value && isMoving)
+        {
+            if (!AudioSource.isPlaying)
+            {
+                StartCoroutine(FadeInAudio());
+            }
+        }
+        else
+        {
+            if (AudioSource.isPlaying)
+            {
+                AudioSource.Pause();
+            }
+        }
+    }
+
+    private IEnumerator FadeInAudio()
+    {
+        const float startVolume = 0f;
+        AudioSource.volume = startVolume;
+        AudioSource.UnPause();
+
+        while (AudioSource.volume < 0.15f)
+        {
+            AudioSource.volume += Time.deltaTime / FadeInDuration;
+            yield return null;
+        }
+
+        AudioSource.volume = 0.15f;
     }
 }

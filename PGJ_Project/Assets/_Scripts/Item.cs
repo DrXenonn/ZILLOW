@@ -17,6 +17,7 @@ public class Item : ScriptableObject
     public string Description;
     public bool IsDiscovered;
     public Sprite Icon;
+    public Sprite UIIcon;
     public GameObject ModelPrefab;
     public GameObject LogicPrefab;
 }

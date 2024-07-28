@@ -18,7 +18,7 @@ MonoBehaviour:
       Quantity: 1
     Result: {fileID: 11400000, guid: 09b94ee78b7d6e3479b1facecb2f4372, type: 2}
     Quantity: 5
-    Time: 5
+    Time: 2
   - Ingredients:
     - Item: {fileID: 11400000, guid: 09b94ee78b7d6e3479b1facecb2f4372, type: 2}
       Quantity: 5
@@ -26,7 +26,7 @@ MonoBehaviour:
       Quantity: 1
     Result: {fileID: 11400000, guid: f98855b1f6ce2e34097e2da4b24c91ae, type: 2}
     Quantity: 5
-    Time: 5
+    Time: 2
   - Ingredients:
     - Item: {fileID: 11400000, guid: 09b94ee78b7d6e3479b1facecb2f4372, type: 2}
       Quantity: 5
@@ -34,4 +34,4 @@ MonoBehaviour:
       Quantity: 1
     Result: {fileID: 11400000, guid: 891e4bcf5901c254e944b7e918ce73c4, type: 2}
     Quantity: 5
-    Time: 5
+    Time: 2

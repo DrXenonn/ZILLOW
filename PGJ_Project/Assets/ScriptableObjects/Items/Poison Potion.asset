@@ -17,6 +17,7 @@ MonoBehaviour:
   Name: Poison Potion
   Description: Inflicts poison damage over time in an area.
   IsDiscovered: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: d8e31429710ab0d4c913dca3c0f65261, type: 3}
+  UIIcon: {fileID: 21300000, guid: f6ab6ecd123b5524e8e69fd61695f55a, type: 3}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

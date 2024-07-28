@@ -7,6 +7,7 @@ public class FireMode : MonoBehaviour
     [SerializeField] private Sprite PotionCrosshair, XBowCrosshair;
     [SerializeField] private BoolVariable XBowMode;
     [SerializeField] private GameObject PotionSelectionMenu, ArrowSelectionMenu;
+    [SerializeField] private AudioSource AudioSource;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class FireMode : MonoBehaviour
             XBowMode.Value = !XBowMode.Value;
             SetCrosshair();
             ShowSelectionMenu();
+            AudioSource.PlayOneShot(AudioSource.clip);
         }
     }
 

@@ -15,8 +15,9 @@ MonoBehaviour:
   ID: 11
   ItemType: 1
   Name: Light Potion
-  Description: Clear all darkness effects.
+  Description: Clears all darkness effects and deals some damage around you.
   IsDiscovered: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 00e8ec3ca24af9f49b28efeaf76dfa78, type: 3}
+  UIIcon: {fileID: 21300000, guid: 21beea7866cde6e4abd74509f0f55dd1, type: 3}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}
