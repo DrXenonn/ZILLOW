@@ -2,22 +2,25 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public enum InteractionTypes
+public enum InteractionType
 {
-    UseTool,
-    Plant,
-    Quest
+    Tool,
+    Pot,
+    Loot
 }
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private InteractionTypes InteractionType;
-    [SerializeField] private GameObject ToolUI;
+    [SerializeField] private InteractionType Type;
     [SerializeField] private TextMeshProUGUI Text;
+    [SerializeField] private InventoryData PlayerInventory;
+    [Header("Tools")]
+    [SerializeField] private GameObject ToolUI;
     [SerializeField] private PlayerLook PlayerLook;
     [SerializeField] private BoolVariable CanMove;
     [SerializeField] private GameEvent OnOpenMenu;
-    
+    [Header("Pot")] 
+    [SerializeField] private Planting PlantingComponent;
     private IEnumerator Start()
     {
         Text.enabled = true;
@@ -32,13 +35,17 @@ public class Interactable : MonoBehaviour
 
     public void OnInteract()
     {
-        if (InteractionType == InteractionTypes.UseTool)
+        if (Type == InteractionType.Tool)
         {
             PlayerLook.LockAndHideMouse(false);
             CanMove.Value = false;
             ToolUI.SetActive(true);
             PlayerLook.LockCamera(true);
             OnOpenMenu.Raise(ToolUI.transform.parent.GetChild(0).GetComponent<RecipeUI>());
+        }
+        else if (Type == InteractionType.Pot)
+        {
+            PlantingComponent.OnInteract();
         }
     }
 

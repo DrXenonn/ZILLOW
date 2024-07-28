@@ -23,7 +23,7 @@ public class Notification : MonoBehaviour
         else
         {
             Icon.sprite = itemData.Item1.Icon;
-            TMP.text = $"+1";
+            TMP.text = $"Added to inventory";
         }
         
         Invoke(nameof(DisableNotification), Duration);

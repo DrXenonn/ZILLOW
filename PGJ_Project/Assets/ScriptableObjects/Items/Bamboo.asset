@@ -18,5 +18,7 @@ MonoBehaviour:
   Description: Used for crafting basic arrows.
   IsDiscovered: 0
   Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
-  ModelPrefab: {fileID: 0}
+  UIIcon: {fileID: 0}
+  ModelPrefab: {fileID: 2237896111627220299, guid: 1534ce825588e5748829d7d767fe1109,
+    type: 3}
   LogicPrefab: {fileID: 0}

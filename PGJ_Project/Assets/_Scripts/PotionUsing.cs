@@ -9,6 +9,7 @@ public struct PotionUIs
     public Item PotionItem;
     public Image Icon;
     public TextMeshProUGUI Text;
+    public TextMeshProUGUI HighlightText;
     public GameObject Highlight;
     public GameObject PotionPrefab;
 }
@@ -22,6 +23,7 @@ public class PotionUsing : MonoBehaviour
     [SerializeField] private InventoryData PlayerInventory;
     [SerializeField] private PotionUIs[] PotionUIs;
     [SerializeField] private AudioSource SwitchAudio;
+    [SerializeField] private GameEvent OnInfo;
     [SerializeField] private float FireForce;
     private Item _selectedPotionItem;
     private Camera _cam;
@@ -51,7 +53,7 @@ public class PotionUsing : MonoBehaviour
             }
             else
             {
-                Debug.Log("Out of Potions!");
+                OnInfo.Raise("Out of " + _selectedPotionItem.name + "!");
             }
         }
 
@@ -85,7 +87,8 @@ public class PotionUsing : MonoBehaviour
             if (!PlayerInventory.Inventory.ContainsKey(potionUI.PotionItem)) continue;
             
             potionUI.Icon.sprite = potionUI.PotionItem.UIIcon;
-            potionUI.Text.text = "x" + PlayerInventory.Inventory[potionUI.PotionItem];
+            potionUI.Text.text = PlayerInventory.Inventory[potionUI.PotionItem].ToString();
+            potionUI.HighlightText.text = PlayerInventory.Inventory[potionUI.PotionItem].ToString();
         }
     }
 

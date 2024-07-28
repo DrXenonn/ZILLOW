@@ -9,6 +9,7 @@ public struct ArrowUI
     public Item ArrowItem;
     public Image Icon;
     public TextMeshProUGUI Text;
+    public TextMeshProUGUI HighlightText;
     public GameObject Highlight;
     public GameObject ArrowPrefab;
 }
@@ -21,8 +22,9 @@ public class Crossbow : MonoBehaviour
     [SerializeField] private GameEvent OnShoot;
     [SerializeField] private InventoryData PlayerInventory;
     [SerializeField] private ArrowUI[] ArrowUIs;
-    [SerializeField] private float FireForce;
     [SerializeField] private AudioSource SwitchAudio;
+    [SerializeField] private GameEvent OnInfo;
+    [SerializeField] private float FireForce;
     private Item _selectedArrowItem;
     private Camera _cam;
     
@@ -50,7 +52,7 @@ public class Crossbow : MonoBehaviour
             }
             else
             {
-                Debug.Log("Out of arrows!");
+                OnInfo.Raise("Out of " + _selectedArrowItem.name + "!");
             }
         }
 
@@ -84,7 +86,8 @@ public class Crossbow : MonoBehaviour
             if (!PlayerInventory.Inventory.ContainsKey(arrowUI.ArrowItem)) continue;
             
             arrowUI.Icon.sprite = arrowUI.ArrowItem.UIIcon;
-            arrowUI.Text.text = "x" + PlayerInventory.Inventory[arrowUI.ArrowItem];
+            arrowUI.Text.text = PlayerInventory.Inventory[arrowUI.ArrowItem].ToString();
+            arrowUI.HighlightText.text = PlayerInventory.Inventory[arrowUI.ArrowItem].ToString();
         }
     }
 
