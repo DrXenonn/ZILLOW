@@ -43,7 +43,11 @@ public class Crossbow : MonoBehaviour
         {
             if (PlayerInventory.Inventory[_selectedArrowItem] > 0)
             {
-                var arrow = Instantiate(SelectedArrow.Value, FirePoint.transform.position, quaternion.identity);
+                var arrow = Instantiate(SelectedArrow.Value, FirePoint.transform.position, Quaternion.identity);
+                var oppositeDirection = -_cam.transform.forward;
+                arrow.transform.rotation = Quaternion.LookRotation(oppositeDirection);
+                arrow.transform.Rotate(0, 90, 0);
+
                 arrow.GetComponent<Rigidbody>().AddForce((_cam.transform.forward) * FireForce, ForceMode.Impulse);
                 OnShoot.Raise();
                 PlayerInventory.Inventory[_selectedArrowItem] -= 1;

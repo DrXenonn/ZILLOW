@@ -15,11 +15,11 @@ public class Arrow : MonoBehaviour
             if (!IsPoison) return;
 
             enemyHealth.SetPoison(true);
-            Destroy(gameObject);
+            Destroy(gameObject, 0.05f);
         }
         else if (other.CompareTag("Environment") || other.CompareTag("Ground"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.05f);
         }
     }
 

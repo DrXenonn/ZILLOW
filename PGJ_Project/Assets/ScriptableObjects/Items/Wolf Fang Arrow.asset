@@ -19,5 +19,6 @@ MonoBehaviour:
   IsDiscovered: 0
   Icon: {fileID: 21300000, guid: 92da0941997037846b95ee5e1f79373e, type: 3}
   UIIcon: {fileID: -583479606, guid: a6b497a04a9c68743a124b098fbeb2fb, type: 3}
-  ModelPrefab: {fileID: 0}
+  ModelPrefab: {fileID: 2237896111627220299, guid: 07d4e36401bc3f24dbc73a880786aae1,
+    type: 3}
   LogicPrefab: {fileID: 0}

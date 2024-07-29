@@ -43,8 +43,8 @@ public class RecipeUI : MonoBehaviour
         for (var i = 0; i < Parent.childCount; i++)
         {
             Destroy(Parent.GetChild(i).gameObject);
-            _currentHighlight = null;
         }
+        _currentHighlight = null;
 
         foreach (var recipe in RecipeManager.RecipesArray)
         {
@@ -57,15 +57,16 @@ public class RecipeUI : MonoBehaviour
             {
                 var icon = Instantiate(Icon, r.transform);
                 var border = icon.GetComponent<Image>();
+                var desc = icon.GetComponent<ShowDescription>();
                 if (i % 2 == 0)
                 {
                     var item = recipe.Ingredients[evenIndex].Item;
                     var quantity = recipe.Ingredients[evenIndex].Quantity;
                     var iconComponent = icon.transform.GetChild(0).GetComponent<Image>();
-                    
                     if (PlayerInventory.Inventory.ContainsKey(item))
                     {
                         iconComponent.sprite = item.Icon;
+                        desc.Description.GetComponentInChildren<TextMeshProUGUI>().text = item.name;
                         PrintQuantity(icon, recipe.Ingredients[evenIndex].Quantity);
 
                         var hasEnough = PlayerInventory.Inventory[item] >= quantity;
@@ -78,6 +79,7 @@ public class RecipeUI : MonoBehaviour
                     {
                         iconComponent.sprite = QuestionMark;
                         PrintQuantity(icon, recipe.Quantity);
+                        desc.ShowDesc = false;
                         foundAllItems = false;
                     }
 
@@ -86,6 +88,7 @@ public class RecipeUI : MonoBehaviour
                 else
                 {
                     icon.transform.GetChild(0).GetComponent<Image>().sprite = PlusSign;
+                    desc.ShowDesc = false;
                     border.enabled = false;
                 }
             }
@@ -93,16 +96,19 @@ public class RecipeUI : MonoBehaviour
             var arrowIcon = Instantiate(Icon, r.transform);
             arrowIcon.transform.GetChild(0).GetComponent<Image>().enabled = false;
             arrowIcon.GetComponent<Image>().sprite = ArrowSign;
+            arrowIcon.GetComponent<ShowDescription>().ShowDesc = false;
 
 
             var resultIcon = Instantiate(Icon, r.transform);
             var resultIconComponent = resultIcon.transform.GetChild(0).GetComponent<Image>();
+            var description = resultIcon.GetComponent<ShowDescription>();
             if (foundAllItems)
             {
                 resultIconComponent.sprite = recipe.Result.Icon;
                 PrintQuantity(resultIcon, recipe.Quantity);
                 var color = resultIconComponent.color;
                 var button = resultIcon.GetComponent<Button>();
+                description.Description.GetComponentInChildren<TextMeshProUGUI>().text = recipe.Result.name;
                 if (availableItems >= recipe.Ingredients.Length)
                 {
                     color.a = 1;
@@ -120,6 +126,7 @@ public class RecipeUI : MonoBehaviour
             else
             {
                 resultIconComponent.sprite = QuestionMark;
+                resultIcon.GetComponent<ShowDescription>().ShowDesc = false;
             }
         }
     }
@@ -138,6 +145,8 @@ public class RecipeUI : MonoBehaviour
 
     public void OnCraft()
     {
+        if (_currentHighlight == null) return;
+        
         _isCrafting = true;
         CraftButton.SetActive(false);
         ProgressBar.transform.parent.gameObject.SetActive(true);
@@ -171,7 +180,7 @@ public class RecipeUI : MonoBehaviour
         var itemPrefab = _selectedRecipe.Result.ModelPrefab;
         for (var i = 0; i < _selectedRecipe.Quantity; i++)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.07f);
             Instantiate(itemPrefab, ItemSpawnPoint.position, quaternion.identity);
         }
     }
