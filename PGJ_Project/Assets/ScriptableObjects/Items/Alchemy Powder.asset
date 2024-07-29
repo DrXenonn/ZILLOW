@@ -17,6 +17,7 @@ MonoBehaviour:
   Name: Alchemy Powder
   Description: A mysterious powder for various alchemical uses.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
+  Icon: {fileID: 21300000, guid: e54d990d9a298ae44baf8a7deb7e0b13, type: 3}
+  UIIcon: {fileID: 0}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

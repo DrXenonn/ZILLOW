@@ -9,7 +9,6 @@ public struct ArrowUI
     public Item ArrowItem;
     public Image Icon;
     public TextMeshProUGUI Text;
-    public TextMeshProUGUI HighlightText;
     public GameObject Highlight;
     public GameObject ArrowPrefab;
 }
@@ -52,7 +51,7 @@ public class Crossbow : MonoBehaviour
             }
             else
             {
-                OnInfo.Raise("Out of " + _selectedArrowItem.name + "!");
+                OnInfo.Raise("Out of " + _selectedArrowItem.name + "s!");
             }
         }
 
@@ -87,7 +86,6 @@ public class Crossbow : MonoBehaviour
             
             arrowUI.Icon.sprite = arrowUI.ArrowItem.UIIcon;
             arrowUI.Text.text = PlayerInventory.Inventory[arrowUI.ArrowItem].ToString();
-            arrowUI.HighlightText.text = PlayerInventory.Inventory[arrowUI.ArrowItem].ToString();
         }
     }
 

@@ -17,6 +17,7 @@ MonoBehaviour:
   Name: Poison Mushroom
   Description: A toxic mushroom. Essential for poison-based items.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
+  Icon: {fileID: 21300000, guid: 0d51bb337208073459b1c8ae0cd5a656, type: 3}
+  UIIcon: {fileID: 0}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

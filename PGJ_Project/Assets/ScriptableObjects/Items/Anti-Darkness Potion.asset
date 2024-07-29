@@ -18,7 +18,7 @@ MonoBehaviour:
   Description: Become immune to darkness(excluding enemy hits) for a short period
     of time.
   IsDiscovered: 0
-  Icon: {fileID: -1477794952, guid: 4e1ee8119c514d44e998da25ab380bd2, type: 3}
+  Icon: {fileID: 21300000, guid: c12a816b43f4ac14ca3b90d9acb00658, type: 3}
   UIIcon: {fileID: -1591491018, guid: a6b497a04a9c68743a124b098fbeb2fb, type: 3}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

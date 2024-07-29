@@ -17,6 +17,7 @@ MonoBehaviour:
   Name: Strawberry
   Description: A sweet fruit. Used to craft consumable potions.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
+  Icon: {fileID: 21300000, guid: dbd5efbd6455d2a4ea2778bcd1ddd607, type: 3}
+  UIIcon: {fileID: 0}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

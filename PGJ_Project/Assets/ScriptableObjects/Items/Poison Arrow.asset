@@ -17,7 +17,7 @@ MonoBehaviour:
   Name: Poison Arrow
   Description: Toxic arrow that inflicts poison on hit.
   IsDiscovered: 0
-  Icon: {fileID: -1439315064, guid: 4e1ee8119c514d44e998da25ab380bd2, type: 3}
+  Icon: {fileID: 21300000, guid: 5f53797b6833b4c4f9c29280d53da509, type: 3}
   UIIcon: {fileID: -329627854, guid: a6b497a04a9c68743a124b098fbeb2fb, type: 3}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

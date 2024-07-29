@@ -17,6 +17,7 @@ MonoBehaviour:
   Name: Bat Eye
   Description: Eye of a bat. Used in potions to survive in the darkness.
   IsDiscovered: 0
-  Icon: {fileID: 21300000, guid: 74fc5a90ccddeb042a0d0ca64fe6ce19, type: 3}
+  Icon: {fileID: 21300000, guid: a15e4f960f7405f4eb44830e02ff7ac5, type: 3}
+  UIIcon: {fileID: 0}
   ModelPrefab: {fileID: 0}
   LogicPrefab: {fileID: 0}

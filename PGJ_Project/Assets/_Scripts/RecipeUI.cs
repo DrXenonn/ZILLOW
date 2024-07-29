@@ -56,11 +56,13 @@ public class RecipeUI : MonoBehaviour
             for (var i = 0; i < (recipe.Ingredients.Length * 2) - 1; i++)
             {
                 var icon = Instantiate(Icon, r.transform);
+                var border = icon.GetComponent<Image>();
                 if (i % 2 == 0)
                 {
                     var item = recipe.Ingredients[evenIndex].Item;
                     var quantity = recipe.Ingredients[evenIndex].Quantity;
-                    var iconComponent = icon.GetComponent<Image>();
+                    var iconComponent = icon.transform.GetChild(0).GetComponent<Image>();
+                    
                     if (PlayerInventory.Inventory.ContainsKey(item))
                     {
                         iconComponent.sprite = item.Icon;
@@ -83,15 +85,18 @@ public class RecipeUI : MonoBehaviour
                 }
                 else
                 {
-                    icon.GetComponent<Image>().sprite = PlusSign;
+                    icon.transform.GetChild(0).GetComponent<Image>().sprite = PlusSign;
+                    border.enabled = false;
                 }
             }
 
             var arrowIcon = Instantiate(Icon, r.transform);
+            arrowIcon.transform.GetChild(0).GetComponent<Image>().enabled = false;
             arrowIcon.GetComponent<Image>().sprite = ArrowSign;
 
+
             var resultIcon = Instantiate(Icon, r.transform);
-            var resultIconComponent = resultIcon.GetComponent<Image>();
+            var resultIconComponent = resultIcon.transform.GetChild(0).GetComponent<Image>();
             if (foundAllItems)
             {
                 resultIconComponent.sprite = recipe.Result.Icon;
@@ -102,7 +107,7 @@ public class RecipeUI : MonoBehaviour
                 {
                     color.a = 1;
                     button.enabled = true;
-                    button.onClick.AddListener(delegate { OnClick(recipe, button.transform.GetChild(0).gameObject); });
+                    button.onClick.AddListener(delegate { OnClick(recipe, button.transform.GetChild(1).gameObject); });
                 }
                 else
                 {

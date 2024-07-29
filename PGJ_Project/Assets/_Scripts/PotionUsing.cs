@@ -9,7 +9,6 @@ public struct PotionUIs
     public Item PotionItem;
     public Image Icon;
     public TextMeshProUGUI Text;
-    public TextMeshProUGUI HighlightText;
     public GameObject Highlight;
     public GameObject PotionPrefab;
 }
@@ -53,7 +52,7 @@ public class PotionUsing : MonoBehaviour
             }
             else
             {
-                OnInfo.Raise("Out of " + _selectedPotionItem.name + "!");
+                OnInfo.Raise("Out of " + _selectedPotionItem.name + "s!");
             }
         }
 
@@ -88,7 +87,6 @@ public class PotionUsing : MonoBehaviour
             
             potionUI.Icon.sprite = potionUI.PotionItem.UIIcon;
             potionUI.Text.text = PlayerInventory.Inventory[potionUI.PotionItem].ToString();
-            potionUI.HighlightText.text = PlayerInventory.Inventory[potionUI.PotionItem].ToString();
         }
     }
 
