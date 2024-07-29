@@ -26,14 +26,14 @@ MonoBehaviour:
     Quantity: 2
     Time: 15
   - Ingredients:
-    - Item: {fileID: 11400000, guid: d575c996ece8628428482d1937a655f4, type: 2}
-      Quantity: 1
-    Result: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}
-    Quantity: 1
-    Time: 10
-  - Ingredients:
     - Item: {fileID: 11400000, guid: 46585689702cbc944a0c7c9715add45a, type: 2}
       Quantity: 1
     Result: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
     Quantity: 1
     Time: 5
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: d575c996ece8628428482d1937a655f4, type: 2}
+      Quantity: 1
+    Result: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}
+    Quantity: 1
+    Time: 10

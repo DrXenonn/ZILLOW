@@ -22,18 +22,18 @@ MonoBehaviour:
     Quantity: 3
     Time: 10
   - Ingredients:
-    - Item: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}
-      Quantity: 1
-    - Item: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
-      Quantity: 1
-    Result: {fileID: 11400000, guid: ae1399e41fb60d84287d44754ba80aaf, type: 2}
-    Quantity: 1
-    Time: 10
-  - Ingredients:
     - Item: {fileID: 11400000, guid: bd4117e4ba32cf943a7d874db2319e00, type: 2}
       Quantity: 2
     - Item: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
       Quantity: 1
     Result: {fileID: 11400000, guid: 35143fca97a8bc245b1b237eb231786c, type: 2}
     Quantity: 2
+    Time: 10
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}
+      Quantity: 1
+    - Item: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
+      Quantity: 1
+    Result: {fileID: 11400000, guid: ae1399e41fb60d84287d44754ba80aaf, type: 2}
+    Quantity: 1
     Time: 10

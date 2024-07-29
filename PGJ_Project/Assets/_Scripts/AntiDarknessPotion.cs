@@ -8,6 +8,6 @@ public class AntiDarknessPotion : MonoBehaviour
     private void Start()
     {
         OnAntiDarkness.Raise(Time);
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
     }
 }

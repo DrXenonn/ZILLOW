@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,13 @@ public class Cooldown : MonoBehaviour
     [SerializeField] private Image CooldownImage;
     [SerializeField] private BoolVariable CanShoot;
     private float _timeShot;
-    
+
+    private void Start()
+    {
+        _timeShot = -CooldownTime;
+        CanShoot.Value = true;
+    }
+
     private void Update()
     {
         var timeSinceLastShot = Time.time - _timeShot;

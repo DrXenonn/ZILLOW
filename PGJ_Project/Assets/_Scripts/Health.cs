@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     [SerializeField] private GameObject DarknessBar;
     [SerializeField] private BoolVariable IsNight, IsInSafeZone, IsInDarkArea;
     [SerializeField] private Image Bar1, Bar2;
-    [SerializeField] private Image ADImage;
+    [SerializeField] private Image ADImage, ADBack;
     [SerializeField] private TextMeshProUGUI ADText;
     [SerializeField] private float LowHp;
     [SerializeField] private float MaxHealth, MaxVignette, MaxVignetteSmoothness, MaxImageDarkness;
@@ -41,19 +41,6 @@ public class Health : MonoBehaviour
 
         InvokeRepeating(nameof(HandleShadow), 0.05f, 0.05f);
         InvokeRepeating(nameof(HandleAntiDarkness),1, 1);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            TakeDamage(10);
-        }
-
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Heal(10);
-        }
     }
 
     private void TakeDamage(int damage)
@@ -103,6 +90,7 @@ public class Health : MonoBehaviour
         _antiDarknessTime = time;
         ADText.text = ((int)time).ToString();
         ADImage.enabled = true;
+        ADBack.enabled = true;
         ADText.enabled = true;
     }
 
@@ -111,6 +99,7 @@ public class Health : MonoBehaviour
         if (_antiDarknessTime <= 0)
         {
             ADImage.enabled = false;
+            ADBack.enabled = false;
             ADText.enabled = false;
         }
         else
