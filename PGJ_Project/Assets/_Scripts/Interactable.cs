@@ -6,7 +6,8 @@ public enum InteractionType
 {
     Tool,
     Pot,
-    Loot
+    Loot,
+    Boss
 }
 
 public class Interactable : MonoBehaviour
@@ -21,6 +22,11 @@ public class Interactable : MonoBehaviour
     [SerializeField] private GameEvent OnOpenMenu;
     [Header("Pot")] 
     [SerializeField] private Planting PlantingComponent;
+    [Header("Loot")]
+    [SerializeField] private Loot LootComponent;
+
+    [Header("Boss")] 
+    [SerializeField] private BossSpawner BossSpawner;
     private IEnumerator Start()
     {
         Text.enabled = true;
@@ -46,6 +52,14 @@ public class Interactable : MonoBehaviour
         else if (Type == InteractionType.Pot)
         {
             PlantingComponent.OnInteract();
+        }
+        else if (Type == InteractionType.Loot)
+        {
+            LootComponent.OnInteract();
+        }
+        else if (Type == InteractionType.Boss)
+        {
+            BossSpawner.OnInteract();
         }
     }
 

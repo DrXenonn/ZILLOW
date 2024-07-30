@@ -1,5 +1,4 @@
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +22,7 @@ public class Crossbow : MonoBehaviour
     [SerializeField] private ArrowUI[] ArrowUIs;
     [SerializeField] private AudioSource SwitchAudio;
     [SerializeField] private GameEvent OnInfo;
+    [SerializeField] private Transform Aim;
     [SerializeField] private float FireForce;
     private Item _selectedArrowItem;
     private Camera _cam;
@@ -43,12 +43,11 @@ public class Crossbow : MonoBehaviour
         {
             if (PlayerInventory.Inventory[_selectedArrowItem] > 0)
             {
-                var arrow = Instantiate(SelectedArrow.Value, FirePoint.transform.position, Quaternion.identity);
-                var oppositeDirection = -_cam.transform.forward;
-                arrow.transform.rotation = Quaternion.LookRotation(oppositeDirection);
-                arrow.transform.Rotate(0, 90, 0);
+                var camLook = _cam.transform.forward;
+                var rotation = Quaternion.LookRotation(-camLook) * Quaternion.Euler(0, 90, 0);
+                var arrow = Instantiate(SelectedArrow.Value, FirePoint.transform.position, rotation);
+                arrow.GetComponent<Rigidbody>().AddForce(camLook * FireForce);
 
-                arrow.GetComponent<Rigidbody>().AddForce((_cam.transform.forward) * FireForce, ForceMode.Impulse);
                 OnShoot.Raise();
                 PlayerInventory.Inventory[_selectedArrowItem] -= 1;
                 UpdateUI();

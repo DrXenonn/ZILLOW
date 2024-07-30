@@ -55,7 +55,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2370471755982706618
 Rigidbody:
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29833ab1215a96d44a0bcb615a25538e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: 3
+  Time: 4
   PoisonArea: {fileID: 7019583910569907505, guid: 736e209db95985348863899003a049fc,
     type: 3}
 --- !u!95 &1882244471010431126

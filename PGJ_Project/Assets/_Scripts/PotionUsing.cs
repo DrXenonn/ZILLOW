@@ -45,7 +45,7 @@ public class PotionUsing : MonoBehaviour
             if (PlayerInventory.Inventory[_selectedPotionItem] > 0)
             {
                 var arrow = Instantiate(SelectedPotion.Value, FirePoint.transform.position, quaternion.identity);
-                arrow.GetComponent<Rigidbody>().AddForce((_cam.transform.forward) * FireForce, ForceMode.Impulse);
+                arrow.GetComponent<Rigidbody>().AddForce((_cam.transform.forward) * FireForce);
                 OnShoot.Raise();
                 PlayerInventory.Inventory[_selectedPotionItem] -= 1;
                 UpdateUI();

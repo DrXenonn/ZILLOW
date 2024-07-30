@@ -7,8 +7,14 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private Image HealthBar, PoisonImage;
     [SerializeField] private FloatVariable PoisonDamage, PoisonDuration;
     [SerializeField] private EnemyMovement Movement;
+    [SerializeField] private Item ItemDrop;
+    [SerializeField] private Animator Animator;
+    [SerializeField] private MeleeAttack MeleeAttack;
+    [SerializeField] private GameObject HpBarObject;
+    [SerializeField] private BoxCollider Collider;
     [SerializeField] private int Health;
     private bool _poison;
+    private bool _dead;
     private int _maxHealth;
 
     private void Start()
@@ -49,6 +55,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int value)
     {
+        HpBarObject.SetActive(true);
         Health -= value;
         HealthBar.fillAmount = (float)Health / _maxHealth;
         Movement.FollowPlayer();
@@ -57,9 +64,15 @@ public class EnemyHealth : MonoBehaviour
 
     private void HandleDeath()
     {
-        if (Health <= 0)
+        if (Health <= 0 && !_dead)
         {
-            Destroy(gameObject);
+            _dead = true;
+            Instantiate(ItemDrop.ModelPrefab, transform.position + (Vector3.up * 2), Quaternion.Euler(-90, 0 ,0));
+            MeleeAttack.enabled = false;
+            Movement.enabled = false;
+            Animator.CrossFade("Death", 0);
+            Collider.enabled = false;
+            Destroy(gameObject, 1f);
         }
     }
 }

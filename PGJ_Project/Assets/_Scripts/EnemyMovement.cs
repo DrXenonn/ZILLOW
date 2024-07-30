@@ -1,10 +1,11 @@
-using System;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private NavMeshAgent Agent;
+    public NavMeshAgent Agent;
+    [SerializeField] private Animator Animator;
     private Transform _playerTransform;
     private bool _isInRange;
 
@@ -16,9 +17,13 @@ public class EnemyMovement : MonoBehaviour
     private void Update()
     {
         if (!_isInRange) return;
-        
+
         Agent.SetDestination(_playerTransform.position);
-        transform.LookAt(_playerTransform.position);
+
+        var direction = (_playerTransform.position - transform.position).normalized;
+        direction.y = 0;
+        var lookRotation = Quaternion.LookRotation(direction);
+        transform.rotation = lookRotation;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +34,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void FollowPlayer()
     {
+        Animator.SetTrigger("IsRunning");
         _isInRange = true;
     }
 

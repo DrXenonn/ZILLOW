@@ -19,5 +19,4 @@ public class Item : ScriptableObject
     public Sprite Icon;
     public Sprite UIIcon;
     public GameObject ModelPrefab;
-    public GameObject LogicPrefab;
 }

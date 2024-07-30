@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: f94d75a5d97c2164b8fd96a161eec3cd
+guid: 3ce37b2d38755404db83e51f544e0d1a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 9fc617bedefa8f649a5eeaf859e8ed60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: d6a76f313bbc90c4d895b766ec4bc222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 8bb9e612f264f42478b6b90e35018dc4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

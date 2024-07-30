@@ -9382,7 +9382,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5.25
+  m_Radius: 5.5
   m_Center: {x: 0, y: -0.00000023841864, z: 2.8000004}
 --- !u!199 &3588061302560663741
 ParticleSystemRenderer:
@@ -9470,7 +9470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9372a9031cf3244688754a41ac57e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: 3
+  Time: 6
   Collider: {fileID: 7477342509031193776}
 --- !u!54 &2191464958997273972
 Rigidbody:

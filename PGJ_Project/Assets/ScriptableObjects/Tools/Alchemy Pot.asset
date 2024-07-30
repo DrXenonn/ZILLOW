@@ -15,19 +15,19 @@ MonoBehaviour:
   RecipesArray:
   - Ingredients:
     - Item: {fileID: 11400000, guid: bd4117e4ba32cf943a7d874db2319e00, type: 2}
+      Quantity: 1
+    - Item: {fileID: 11400000, guid: 11dd4b0cf6ef0e045af5e125dee6a333, type: 2}
       Quantity: 2
+    Result: {fileID: 11400000, guid: 35143fca97a8bc245b1b237eb231786c, type: 2}
+    Quantity: 2
+    Time: 10
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: bd4117e4ba32cf943a7d874db2319e00, type: 2}
+      Quantity: 1
     - Item: {fileID: 11400000, guid: 5fc668893bdbb1e449907b6491a3368c, type: 2}
       Quantity: 2
     Result: {fileID: 11400000, guid: 08ecad7a5edc64f40bc5e3bf6a648290, type: 2}
     Quantity: 3
-    Time: 10
-  - Ingredients:
-    - Item: {fileID: 11400000, guid: bd4117e4ba32cf943a7d874db2319e00, type: 2}
-      Quantity: 2
-    - Item: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
-      Quantity: 1
-    Result: {fileID: 11400000, guid: 35143fca97a8bc245b1b237eb231786c, type: 2}
-    Quantity: 2
     Time: 10
   - Ingredients:
     - Item: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}

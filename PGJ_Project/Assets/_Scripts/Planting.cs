@@ -22,7 +22,7 @@ public class Planting : MonoBehaviour
         _part1 = BambooGrowTime.Value * 0.25f;
         _part2 = BambooGrowTime.Value * 0.5f;
         _part3 = BambooGrowTime.Value * 0.75f;
-        Text.text = "\"E\" to plant bamboo";
+        Text.text = "[E] To Plant Bamboo Seed";
         InvokeRepeating(nameof(Grow), 1, 1);
     }
 
@@ -40,7 +40,7 @@ public class Planting : MonoBehaviour
             }
             else if (!hasBamboo || bambooSeedCount <= 0)
             {
-                Info.Raise("You don't have any seeds!");
+                Info.Raise("You Don't Have Any Seeds!");
             }
 
         }
@@ -49,7 +49,7 @@ public class Planting : MonoBehaviour
             StartCoroutine(nameof(SpawnItems));
             _ready = false;
             Models[3].SetActive(false);
-            Text.text = "\"E\" to plant bamboo";
+            Text.text = "[E] To Plant Bamboo Seed";
         }
     }
 
@@ -61,7 +61,7 @@ public class Planting : MonoBehaviour
         {
             Models[2].SetActive(false);
             Models[3].SetActive(true);
-            Text.text = "\"E\" to harvest";
+            Text.text = "[E] To Harvest";
             _ready = true;
             _isGrowing = false;
         }

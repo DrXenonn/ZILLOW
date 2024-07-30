@@ -72,7 +72,7 @@ public class RecipeUI : MonoBehaviour
                         var hasEnough = PlayerInventory.Inventory[item] >= quantity;
                         availableItems += hasEnough ? 1 : 0;
                         var color = iconComponent.color;
-                        color.a = hasEnough ? 1 : 0.3f;
+                        color.a = hasEnough ? 1 : 0.25f;
                         iconComponent.color = color;
                     }
                     else
@@ -117,7 +117,7 @@ public class RecipeUI : MonoBehaviour
                 }
                 else
                 {
-                    color.a = 0.3f;
+                    color.a = 0.25f;
                     button.enabled = false;
                 }
 
