@@ -450,6 +450,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ButtonBorder
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 162
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 9, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85053a8d22c207646a00932b659621b0
+      internalID: -22488334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -461,6 +482,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      ButtonBorder: -1742071567
       Pxiel Art UI borders_0: -311834556
       Pxiel Art UI borders_1: 1354544699
       Pxiel Art UI borders_10: -406607546
@@ -479,7 +501,6 @@ TextureImporter:
       Pxiel Art UI borders_4: 1492351325
       Pxiel Art UI borders_5: 793813408
       Pxiel Art UI borders_6: -1009851445
-      Pxiel Art UI borders_7: -1742071567
       Pxiel Art UI borders_8: -2111098141
       Pxiel Art UI borders_9: -1157892658
   mipmapLimitGroupName: 
