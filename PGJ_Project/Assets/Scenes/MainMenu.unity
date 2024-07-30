@@ -200,7 +200,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1599.9999, y: 342.47726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &109317593
 MonoBehaviour:
@@ -599,16 +599,16 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 150
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 20
+  m_Spacing: 0
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!222 &320635110
 CanvasRenderer:
@@ -1513,7 +1513,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1400, y: 0}
+  m_SizeDelta: {x: 1400, y: 76.73474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639551781
 MonoBehaviour:
@@ -1818,13 +1818,13 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 400
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_Spacing: 350
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!1001 &929144137
 PrefabInstance:
@@ -2202,7 +2202,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1599.9999, y: 257.4102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073229998
 MonoBehaviour:
@@ -2258,15 +2258,15 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
+    m_Bottom: 150
+  m_ChildAlignment: 1
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!1001 &1092844001
 PrefabInstance:
@@ -4165,6 +4165,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 191069116286860111, guid: 1269459a28a9b814d89aaa427179e151,
+        type: 3}
+      propertyPath: m_Name
+      value: CreditMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 382776207375318131, guid: 1269459a28a9b814d89aaa427179e151,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4214,6 +4219,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -77.980675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507477327570577533, guid: 1269459a28a9b814d89aaa427179e151,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507477327570577533, guid: 1269459a28a9b814d89aaa427179e151,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507477327570577533, guid: 1269459a28a9b814d89aaa427179e151,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507477327570577533, guid: 1269459a28a9b814d89aaa427179e151,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2084273219689741814, guid: 1269459a28a9b814d89aaa427179e151,
         type: 3}
@@ -4906,6 +4931,7 @@ GameObject:
   - component: {fileID: 2090260922}
   - component: {fileID: 2090260924}
   - component: {fileID: 2090260923}
+  - component: {fileID: 2090260925}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -4930,7 +4956,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1138.905, y: 196.418}
+  m_SizeDelta: {x: 938.1924, y: 161.8027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090260923
 MonoBehaviour:
@@ -4970,6 +4996,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090260921}
   m_CullTransparentMesh: 1
+--- !u!114 &2090260925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090260921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.6666667}
+  m_EffectDistance: {x: 0, y: -13}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &4007264661249983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5474,6 +5515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431954799321105411, guid: 24d76b88e94a8dc4cb3671a09e2e1ca1,
+        type: 3}
+      propertyPath: MinDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
