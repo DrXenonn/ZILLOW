@@ -5,7 +5,9 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject Enemy;
     [SerializeField] private ParticleSystem SpawnEffect;
+    [SerializeField] private BoolVariable IsNight;
     [SerializeField] private float Time;
+    [SerializeField] private bool OnlySpawnAtNight;
     private float _elapsedTime;
     private bool _isSpawned = true;
 
@@ -21,12 +23,24 @@ public class EnemySpawner : MonoBehaviour
 
         if (!_isSpawned && _elapsedTime >= Time)
         {
-            SpawnEffect.Play();
-            Instantiate(Enemy, transform.position, quaternion.identity, transform);
-            _elapsedTime = 0;
+            if (OnlySpawnAtNight && IsNight.Value)
+            {
+                Spawn();
+            }
+            else if (!OnlySpawnAtNight)
+            {
+                Spawn();
+            }
         }
 
         _elapsedTime++;
+    }
+
+    private void Spawn()
+    {
+        SpawnEffect.Play();
+        Instantiate(Enemy, transform.position, quaternion.identity, transform);
+        _elapsedTime = 0;
     }
 
     private void CheckIsSpawned()

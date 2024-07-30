@@ -125,7 +125,6 @@ public class Health : MonoBehaviour
             if (inSafeZone)
             {
                 Heal(HealTick);
-                Debug.Log("Healing cause in safe zone");
             }
             else if (inDarkArea)
             {
@@ -145,7 +144,6 @@ public class Health : MonoBehaviour
         else if (!inDarkArea)
         {
             Heal(HealTick);
-            Debug.Log("Healing cause not in dark are and day");
         }
         else
         {
