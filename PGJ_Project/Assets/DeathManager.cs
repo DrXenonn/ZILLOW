@@ -15,6 +15,7 @@ public class DeathManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI DeathTimer;
     [SerializeField] private PotionUsing PotionUsing;
     [SerializeField] private Crossbow Crossbow;
+    [SerializeField] private BoolVariable IsInSafeZone, IsInDarkArea;
     [SerializeField] private float DeathScreenTimer;
     [SerializeField] private float PercentageToKeep;
     [SerializeField] private int MinItemCountToLose;
@@ -39,6 +40,8 @@ public class DeathManager : MonoBehaviour
         CanMove.Value = true;
         PotionUsing.UpdateUI();
         Crossbow.UpdateUI();
+        IsInDarkArea.Value = false;
+        IsInSafeZone.Value = true;
     }
 
     private IEnumerator HandleDeathTimer()

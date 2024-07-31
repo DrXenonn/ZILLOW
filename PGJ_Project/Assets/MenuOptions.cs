@@ -1,7 +1,5 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuOptions : MonoBehaviour
@@ -16,11 +14,12 @@ public class MenuOptions : MonoBehaviour
     {
         Music.SetFloat("Volume", MusicVolume.Value);
         SoundEffect.SetFloat("sVolume", SoundEffectVolume.Value);
+        UpdateSettingSliders();
     }
 
     public void SetMusicVolume(float volume)
     {
-        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f, -30f, 15f);
+        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f - 15f, -60f, 15f);
         Music.SetFloat("Volume", clampedVolume);
         MusicVolume.Value = clampedVolume;
         MusicSliderValue.Value = MusicSlider.value;
@@ -28,7 +27,7 @@ public class MenuOptions : MonoBehaviour
     
     public void SetSfxVolume(float volume)
     {
-        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f, -30f, 10f);
+        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f - 15f, -60f, 10f);
         SoundEffect.SetFloat("sVolume", clampedVolume);
         SoundEffectVolume.Value = clampedVolume;
         SfxSliderValue.Value = SfxSlider.value;

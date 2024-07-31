@@ -13,7 +13,6 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private FloatVariable MusicVolume, SoundEffectVolume;
     [SerializeField] private Slider MusicSlider, SfxSlider, SensSlider;
     [SerializeField] private FloatVariable MusicSliderValue, SfxSliderValue, MouseSensSliderValue;
-
     [SerializeField] private Light[] LightsToDisable;
 
     private void Start()
@@ -21,11 +20,12 @@ public class PauseMenu : MonoBehaviour
         Music.SetFloat("Volume", MusicVolume.Value);
         SoundEffect.SetFloat("sVolume", SoundEffectVolume.Value);
         PlayerLook.UpdateSens();
+        UpdateSettingSliders();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (!PauseMenuObj.activeSelf)
             {
@@ -81,7 +81,7 @@ public class PauseMenu : MonoBehaviour
     
     public void SetMusicVolume(float volume)
     {
-        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f, -30f, 15f);
+        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f - 15f, -60f, 15f);
         Music.SetFloat("Volume", clampedVolume);
         MusicVolume.Value = clampedVolume;
         MusicSliderValue.Value = MusicSlider.value;
@@ -89,7 +89,7 @@ public class PauseMenu : MonoBehaviour
     
     public void SetSfxVolume(float volume)
     {
-        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f, -30f, 10f);
+        var clampedVolume = (volume == 0f) ? -80f : Mathf.Clamp(volume * 30f - 15f, -60f, 10f);
         SoundEffect.SetFloat("sVolume", clampedVolume);
         SoundEffectVolume.Value = clampedVolume;
         SfxSliderValue.Value = SfxSlider.value;

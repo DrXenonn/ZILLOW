@@ -5,6 +5,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public NavMeshAgent Agent;
     [SerializeField] private Animator Animator;
+    [SerializeField] private AudioSource AudioSource;
     [SerializeField] private bool IsBoss;
     private Transform _playerTransform;
     private bool _isInRange;
@@ -37,6 +38,12 @@ public class EnemyMovement : MonoBehaviour
     public void FollowPlayer()
     {
         Animator.SetTrigger("IsRunning");
+        
+        if (!IsBoss && !_isInRange)
+        {
+            AudioSource.Play();
+        }
+        
         _isInRange = true;
     }
 
