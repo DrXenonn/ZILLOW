@@ -37,3 +37,11 @@ MonoBehaviour:
     Result: {fileID: 11400000, guid: ae1399e41fb60d84287d44754ba80aaf, type: 2}
     Quantity: 1
     Time: 10
+  - Ingredients:
+    - Item: {fileID: 11400000, guid: 5fc668893bdbb1e449907b6491a3368c, type: 2}
+      Quantity: 3
+    - Item: {fileID: 11400000, guid: 690177fa03b8d524d9fec9222a34914f, type: 2}
+      Quantity: 2
+    Result: {fileID: 11400000, guid: e2ed44f8c8e0a184a890c944bdd0bc38, type: 2}
+    Quantity: 1
+    Time: 10

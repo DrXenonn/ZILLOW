@@ -5,7 +5,8 @@ public enum ItemTypes
     Ingredient,
     Potion,
     Arrow,
-    Seed
+    Seed,
+    Artifact
 }
 
 [CreateAssetMenu(menuName = "Item", fileName = "NewItem")]

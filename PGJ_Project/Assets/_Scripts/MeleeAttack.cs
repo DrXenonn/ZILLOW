@@ -7,6 +7,7 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private GameEvent OnAttack;
     [SerializeField] private Animator Animator;
     [SerializeField] private EnemyMovement Movement;
+    [SerializeField] private bool IsBoss;
     [SerializeField] private int Damage;
     private bool _isClose;
     private float _originalSpeed;
@@ -35,15 +36,33 @@ public class MeleeAttack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("EnemyAttackRange")) return;
-        Animator.SetBool("IsCloseToPlayer", true);
-        _isClose = true;
+        if (!IsBoss)
+        {
+            if (!other.CompareTag("EnemyAttackRange")) return;
+            Animator.SetBool("IsCloseToPlayer", true);
+            _isClose = true;
+        }
+        else
+        {
+            if (!other.CompareTag("BossAttackRange")) return;
+            Animator.SetBool("IsCloseToPlayer", true);
+            _isClose = true;
+        }
     }
     
     private void OnTriggerExit(Collider other)
     {
-        if (!other.CompareTag("EnemyAttackRange")) return;
-        Animator.SetBool("IsCloseToPlayer", false);
-        _isClose = false;
+        if (!IsBoss)
+        {
+            if (!other.CompareTag("EnemyAttackRange")) return;
+            Animator.SetBool("IsCloseToPlayer", false);
+            _isClose = false;
+        }
+        else
+        {
+            if (!other.CompareTag("BossAttackRange")) return;
+            Animator.SetBool("IsCloseToPlayer", false);
+            _isClose = false;
+        }
     }
 }

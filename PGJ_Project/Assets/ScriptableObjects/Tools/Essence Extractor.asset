@@ -30,7 +30,7 @@ MonoBehaviour:
       Quantity: 1
     Result: {fileID: 11400000, guid: 1fee3d5a1b3e8ef4699955cc26f2104b, type: 2}
     Quantity: 2
-    Time: 10
+    Time: 5
   - Ingredients:
     - Item: {fileID: 11400000, guid: 46585689702cbc944a0c7c9715add45a, type: 2}
       Quantity: 1

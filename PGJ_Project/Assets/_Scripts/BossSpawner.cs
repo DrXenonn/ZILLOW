@@ -1,9 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Serialization;
 
 public class BossSpawner : MonoBehaviour
 {
+    [SerializeField] private InventoryData PlayerInventory;
+    [SerializeField] private Item SpawnItem;
     [SerializeField] private GameObject CutSceneCam;
     [SerializeField] private Transform BossParent;
     [SerializeField] private ParticleSystem BossSpawnParticles;
@@ -16,6 +19,8 @@ public class BossSpawner : MonoBehaviour
     [SerializeField] private Light MainLight, BossLight;
     [SerializeField] private Light[] HouseLights;
     [SerializeField] private SphereCollider EnemyTriggerRange;
+    [SerializeField] private GameObject CorruptionStone;
+    [SerializeField] private GameEvent Info;
     [SerializeField] private float BossSpawnTime;
     private bool _isPlayingCutScene;
     private GameObject _hills;
@@ -23,6 +28,23 @@ public class BossSpawner : MonoBehaviour
     public void OnInteract()
     {
         if (_isPlayingCutScene) return;
+        
+        var hasSpawnItem = PlayerInventory.Inventory.TryGetValue(SpawnItem, out var count); 
+        if (hasSpawnItem && count > 0)
+        {
+            CorruptionStone.SetActive(true);
+            PlayerInventory.Inventory[SpawnItem]--;
+            Invoke(nameof(HandleBossSpawn), 0.5f);
+        }
+        else if (!hasSpawnItem || count <= 0)
+        {
+            Info.Raise("You Need The Corruption Stone...");
+        }
+
+    }
+
+    private void HandleBossSpawn()
+    {
         _isPlayingCutScene = true;
         CutSceneCam.transform.rotation = MainCam.transform.rotation;
         CutSceneCam.transform.position = MainCam.transform.position;
@@ -116,6 +138,7 @@ public class BossSpawner : MonoBehaviour
         BossLight.enabled = false;
         MainLight.enabled = true;
         EnemyTriggerRange.enabled = true;
+        CorruptionStone.SetActive(false);
         Destroy(_hills);
     }
 

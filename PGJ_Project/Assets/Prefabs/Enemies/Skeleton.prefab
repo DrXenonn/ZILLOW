@@ -263,7 +263,7 @@ MonoBehaviour:
   m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 1
+  m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2763852452732352959
@@ -897,6 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 6696178913965446802}
   Animator: {fileID: 7005157740247528009}
+  IsBoss: 0
 --- !u!65 &3057242202728167884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -933,6 +934,7 @@ MonoBehaviour:
   OnAttack: {fileID: 11400000, guid: 81648fd43c1691846a3635a1f6df67d2, type: 2}
   Animator: {fileID: 7005157740247528009}
   Movement: {fileID: 6070051001122540941}
+  IsBoss: 0
   Damage: 200
 --- !u!114 &8232293876985189304
 MonoBehaviour:

@@ -21,7 +21,7 @@ public class InventoryUI : MonoBehaviour
         var potionIndex = 0;
         foreach (var item in PlayerInventory.Inventory.Keys)
         {
-            if (item.ItemType is ItemTypes.Ingredient or ItemTypes.Seed)
+            if (item.ItemType is ItemTypes.Ingredient or ItemTypes.Seed or ItemTypes.Artifact)
             {
                 Items[index].sprite = item.Icon;
                 Texts[index].text = PlayerInventory.Inventory[item].ToString();

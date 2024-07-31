@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,12 +5,15 @@ public class EnemyMovement : MonoBehaviour
 {
     public NavMeshAgent Agent;
     [SerializeField] private Animator Animator;
+    [SerializeField] private bool IsBoss;
     private Transform _playerTransform;
     private bool _isInRange;
 
     private void Awake()
     {
         _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        if (!IsBoss) return;
+        FollowPlayer();
     }
     
     private void Update()

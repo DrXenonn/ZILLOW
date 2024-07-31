@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnAntiDarkness: {fileID: 11400000, guid: 6faaf85c637bb7343af3984dbb6449ac, type: 2}
-  Time: 45
+  Time: 70
 --- !u!82 &4943634427061306128
 AudioSource:
   m_ObjectHideFlags: 0
