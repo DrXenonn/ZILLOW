@@ -1560,6 +1560,7 @@ GameObject:
   - component: {fileID: 5204506568872302405}
   - component: {fileID: 3433154281398576732}
   - component: {fileID: 73264234056130100}
+  - component: {fileID: 7367416173195949377}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -1704,7 +1705,37 @@ MonoBehaviour:
   MeleeAttack: {fileID: 3433154281398576732}
   HpBarObject: {fileID: 3751885638767301618}
   Collider: {fileID: 5204506568872302405}
+  OnWin: {fileID: 0}
+  IsBoss: 0
   Health: 60
+--- !u!114 &7367416173195949377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554729268670633316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9f586d54119d8458956eb8e1f55126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c7d36d42126d6934d9c64beb32dd23b0, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 44880331230921957}
+        m_TargetAssemblyTypeName: EnemyMovement, Assembly-CSharp
+        m_MethodName: OnPlayerDeath
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7625183783759863871
 GameObject:
   m_ObjectHideFlags: 0

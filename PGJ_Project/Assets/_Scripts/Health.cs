@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     [SerializeField] private Image Bar1, Bar2;
     [SerializeField] private Image ADImage, ADBack;
     [SerializeField] private TextMeshProUGUI ADText;
+    [SerializeField] private GameEvent OnDeath;
+    [SerializeField] private BoolVariable IsDead;
     [SerializeField] private float LowHp;
     [SerializeField] private float MaxHealth, MaxVignette, MaxVignetteSmoothness, MaxImageDarkness;
     [SerializeField] private int DarknessDamageTick;
@@ -27,6 +29,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        IsDead.Value = false;
         PlayerHealth.Value = MaxHealth;
         _color = BlackImage.color;
         IsNight.Value = false;
@@ -46,8 +49,17 @@ public class Health : MonoBehaviour
     private void TakeDamage(int damage)
     {
         PlayerHealth.Value = Mathf.Max(PlayerHealth.Value - damage, 0);
-        //TODO Check death
+        CheckDeath();
         UpdateEffects();
+    }
+
+    private void CheckDeath()
+    {
+        if (PlayerHealth.Value <= 0 && !IsDead.Value)
+        {
+            OnDeath.Raise();
+            IsDead.Value = true;
+        }
     }
 
     private void UpdateEffects()

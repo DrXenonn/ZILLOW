@@ -12,6 +12,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private MeleeAttack MeleeAttack;
     [SerializeField] private GameObject HpBarObject;
     [SerializeField] private BoxCollider Collider;
+    [SerializeField] private GameEvent OnWin;
+    [SerializeField] private bool IsBoss;
     [SerializeField] private int Health;
     private bool _poison;
     private bool _dead;
@@ -73,6 +75,19 @@ public class EnemyHealth : MonoBehaviour
             Animator.CrossFade("Death", 0);
             Collider.enabled = false;
             Destroy(gameObject, 1f);
+            if (IsBoss)
+            {
+                OnWin.Raise();
+            }
+        }
+    }
+
+    public void OnPlayerDeath(Component sender, object data)
+    {
+        if (IsBoss)
+        {
+            Health = _maxHealth;
+            HealthBar.fillAmount = (float)Health / _maxHealth;
         }
     }
 }

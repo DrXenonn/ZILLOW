@@ -833,6 +833,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8232293876985189304}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0f29ecfa84edbfb4fb69543dbe463704,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3588190343059526841}
   m_SourcePrefab: {fileID: 100100000, guid: 0f29ecfa84edbfb4fb69543dbe463704, type: 3}
 --- !u!1 &3596856600609367206 stripped
 GameObject:
@@ -958,7 +962,37 @@ MonoBehaviour:
   MeleeAttack: {fileID: 6937805828973503877}
   HpBarObject: {fileID: 175141203899523358}
   Collider: {fileID: 4376361020055658359}
+  OnWin: {fileID: 0}
+  IsBoss: 0
   Health: 125
+--- !u!114 &-3588190343059526841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3596856600609367206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9f586d54119d8458956eb8e1f55126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c7d36d42126d6934d9c64beb32dd23b0, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6070051001122540941}
+        m_TargetAssemblyTypeName: EnemyMovement, Assembly-CSharp
+        m_MethodName: OnPlayerDeath
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &4224740019084426780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f29ecfa84edbfb4fb69543dbe463704,

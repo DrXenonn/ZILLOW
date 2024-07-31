@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitEffect: {fileID: 1900178570720061293}
-  Damage: 30
+  Damage: 45
   TimeToLive: 1.33
   IsPoison: 1
 --- !u!82 &1140147038620256575

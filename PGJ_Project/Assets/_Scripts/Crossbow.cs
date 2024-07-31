@@ -81,7 +81,7 @@ public class Crossbow : MonoBehaviour
         }
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         foreach (var arrowUI in ArrowUIs)
         {

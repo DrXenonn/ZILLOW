@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealAmount: 9999
-  Damage: 5
+  Damage: 15
   HealPlayer: {fileID: 11400000, guid: de1e630a96a73a64385ce269924be777, type: 2}
 --- !u!82 &1567031110600662537
 AudioSource:

@@ -47,4 +47,9 @@ public class EnemySpawner : MonoBehaviour
     {
         _isSpawned = transform.childCount > 1;
     }
+
+    public void OnPlayerDeath(Component sender, object data)
+    {
+        _elapsedTime = Time;
+    }
 }

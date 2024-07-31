@@ -79,7 +79,7 @@ public class PotionUsing : MonoBehaviour
         }
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         foreach (var potionUI in PotionUIs)
         {

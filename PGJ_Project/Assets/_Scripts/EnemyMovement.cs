@@ -40,9 +40,11 @@ public class EnemyMovement : MonoBehaviour
         _isInRange = true;
     }
 
-    /*private void OnTriggerExit(Collider other)
+    public void OnPlayerDeath(Component sender, object data)
     {
-        if (!other.CompareTag("EnemyTrigger")) return;
-        _isInRange = false;
-    }*/
+        if (!IsBoss)
+        {
+            Destroy(gameObject, 6f);
+        }
+    }
 }
