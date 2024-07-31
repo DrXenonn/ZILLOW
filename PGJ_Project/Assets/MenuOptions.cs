@@ -17,24 +17,6 @@ public class MenuOptions : MonoBehaviour
         Music.SetFloat("Volume", MusicVolume.Value);
         SoundEffect.SetFloat("sVolume", SoundEffectVolume.Value);
     }
-    
-    public void OnPlay()
-    {
-        StartCoroutine(LoadSceneAsyncAdditive(1));
-    }
-
-    private IEnumerator LoadSceneAsyncAdditive(int sceneIndex)
-    {
-        var asyncLoad = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
-
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-    }
-
 
     public void SetMusicVolume(float volume)
     {

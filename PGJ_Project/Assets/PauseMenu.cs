@@ -62,6 +62,8 @@ public class PauseMenu : MonoBehaviour
         {
             l.enabled = false;
         }
+
+        Time.timeScale = 1;
         StartCoroutine(LoadSceneAsyncAdditive(0));
     }
     

@@ -1,5 +1,6 @@
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLook : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerLook : MonoBehaviour
     private void Awake()
     {
         _pov = Cinemachine.GetCinemachineComponent<CinemachinePOV>();
+        Time.timeScale = 1;
     }
 
     private void Start()

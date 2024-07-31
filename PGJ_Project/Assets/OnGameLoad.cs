@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnGameLoad : MonoBehaviour
 {
-
     [SerializeField] private Light[] Lights;
 
     private void Start()
@@ -16,5 +17,22 @@ public class OnGameLoad : MonoBehaviour
         {
             l.enabled = true;
         }
+    }
+    
+    public void OnPlay()
+    {
+        StartCoroutine(LoadSceneAsyncAdditive(1));
+    }
+
+    private IEnumerator LoadSceneAsyncAdditive(int sceneIndex)
+    {
+        var asyncLoad = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 }
