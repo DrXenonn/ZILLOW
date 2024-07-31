@@ -14696,6 +14696,12 @@ Transform:
   - {fileID: 54567081}
   m_Father: {fileID: 1665329540}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -30}
+--- !u!108 &532403498 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 8384400588299387068, guid: bbba7a589d910cc40b7254e05d3c5ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 189141359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &538873878
 GameObject:
   m_ObjectHideFlags: 0
@@ -46404,6 +46410,13 @@ MonoBehaviour:
   SfxSliderValue: {fileID: 11400000, guid: c4ebd514c2dd44148b14efb283758ab3, type: 2}
   MouseSensSliderValue: {fileID: 11400000, guid: 99d1e2d454c9ecc4db4df237a8d62c20,
     type: 2}
+  LightsToDisable:
+  - {fileID: 532403498}
+  - {fileID: 410087040}
+  - {fileID: 1743619348}
+  - {fileID: 1259639388}
+  - {fileID: 592136781}
+  - {fileID: 1924401590}
 --- !u!1 &1705565968
 GameObject:
   m_ObjectHideFlags: 0

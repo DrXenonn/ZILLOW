@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -13,6 +13,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private FloatVariable MusicVolume, SoundEffectVolume;
     [SerializeField] private Slider MusicSlider, SfxSlider, SensSlider;
     [SerializeField] private FloatVariable MusicSliderValue, SfxSliderValue, MouseSensSliderValue;
+
+    [SerializeField] private Light[] LightsToDisable;
 
     private void Start()
     {
@@ -56,7 +58,23 @@ public class PauseMenu : MonoBehaviour
 
     public void OnMainMenu()
     {
-        SceneManager.LoadScene(0);
+        foreach (var l in LightsToDisable)
+        {
+            l.enabled = false;
+        }
+        StartCoroutine(LoadSceneAsyncAdditive(0));
+    }
+    
+    private IEnumerator LoadSceneAsyncAdditive(int sceneIndex)
+    {
+        var asyncLoad = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
     
     public void SetMusicVolume(float volume)
